@@ -1,5 +1,5 @@
 
-#include "ft.h"
+#include "../includes/ft.h"
 
 void	ft_putchar(char c)
 {

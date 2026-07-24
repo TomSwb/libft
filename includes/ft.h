@@ -1,5 +1,5 @@
 
-#ifndefine FT_H
+#ifndef FT_H
 # define FT_H
 
 /* Include often used libraries */
@@ -10,10 +10,6 @@
 // malloc lib
 # include <stdlib.h>
 
-/* Functions prototypes */
-
----
-
 /* Writing - writting.c */
 
 // write a char from a given var addr
@@ -22,79 +18,74 @@ void	ft_putchar(char c);
 void	ft_putstr(char *src);
 // write an int
 void	ft_putnbr(int num);
-// lowercase everything
-lowercase
-// upercase everything
-uppercase
-
-------
 
 /* Transformation and duplication - trans_dup.c*/
 
+// lowercase everything
+char    *ft_lower_all(char *str);
+// upercase everything
+char    *ft_upper_all(char *str);
 // transform an atoi str into a valid int
-atoi
+int		ft_atoi(char *str);
 // transform an int into a char *
-itoa
+char	*ft_itoa(int num);
 // copies a str
-strcpy
+char	*ft_strcpy(char *str);
 // concatanate str together
-strcat
+char	*ft_strcat(char *s1, char *s2);
 // dups a str into a new heap located addr
-dup
-
-------
+char	*ft_dup(char *str);
 
 /* Comparisons str - comp_str.c*/
 
 // returns the lenght of a given str
-strlen
+int		ft_strlen(char *str);
 // compare ASCII values of two str until they dont match and return diff
-strcmp
+int		ft_strcmp(char *s1, char *s2);
 // compare ASCII values of a given char inside a str until they match and return true / false
-str_char_cmp
+int		ft_find_char(char *s1, char c);
 // check if a num is present in str
-check_is_num
+int		ft_has_num(char *str);
 // check if a lowercase is present in str
-
+int		ft_has_lower(char *str);
 // check if a uppercase is present in str
-
+int		ft_has_upper(char *str);
 // check if a isspace(3) is present in str
-
+int		ft_has_isspace(char *str);
 // check if str is printable only
-
+int		ft_is_printable_only(char *str);
 // check if only nums are present in str
-
+int		ft_is_num_only(char *str);
 // check if only lowercase are present in str
-
+int		ft_is_lower_only(char *str);
 // check if only uppercase are present in str
-
+int		ft_is_upper_only(char *str);
 // check if only alpha are present in str
-
--------
+int		ft_is_alpha_only(char *str);
 
 /* Mathematical formulas - math.c */
 
 // factorial
-
+int		ft_rec_factorial(int num, int fact);
 // power
-
+int		ft_rec_power(int num, int power);
 // fibonacci
-
+int		ft_fibonacci(int num);
 // square root
-
+int		ft_square_root(int num);
 // is prime
-
+int		ft_is_prime(int num);
 // next prime
-
+int		ft_find_next_prime(int num);
 
 /* Maybes */
 
 // writes bin value
-putbin
+
 // write the hex value of a given char
-puthex
+
 // swaps values (needs multiple var types)
-swap (char, char*, int, int*)
+
 // strjoin
 
 // strsplit
@@ -111,8 +102,7 @@ swap (char, char*, int, int*)
 
 // strlcat
 
-c11
-// foreach
+//foreach
 
 // map
 
