@@ -1,6 +1,23 @@
 
 #include "ft.h"
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_putstr(char *src)
+{
+	int 	i;
+	
+	i = 0;
+	while (src[i])
+	{
+		ft_putchar(src[i]);
+		i++;
+	}
+}
+
 void	ft_putnbr(int num)
 {
 	long	nb;
