@@ -74,19 +74,19 @@ int		ft_atoi(char *str);
 char	*ft_itoa(int num);
 
 
-/* Mathematical formulas - math.c */
+/* Mathematical formulas */
 
-// factorial
-int		ft_rec_factorial(int num, int fact);
-// power
+// factorial - math1.c
+int		ft_rec_factorial(int num);
+// power - math1.c
 int		ft_rec_power(int num, int power);
-// fibonacci
+// fibonacci - math1.c
 int		ft_fibonacci(int num);
-// square root
+// square root - math1.c
 int		ft_square_root(int num);
-// is prime
+// is prime - math2.c
 int		ft_is_prime(int num);
-// next prime
+// next prime - math2.c
 int		ft_find_next_prime(int num);
 
 /* Maybes */

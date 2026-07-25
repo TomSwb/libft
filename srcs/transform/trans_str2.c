@@ -1,5 +1,5 @@
 
-#include "../includes/ft.h"
+#include "../../includes/ft.h"
 
 int		ft_atoi(char *str)
 {

@@ -1,5 +1,5 @@
 
-#include "../includes/ft.h"
+#include "../../includes/ft.h"
 
 char    *ft_lower_all(char *str)
 {
