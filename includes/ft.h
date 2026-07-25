@@ -21,36 +21,36 @@ void	ft_putnbr(int num);
 
 /* Comparisons str - comp_str.c*/
 
+// check if a char is printable - comp_str1.c
+int		ft_is_non_printable(char c);
+// check if a char is num - comp_str1.c
+int		ft_is_num(char c);
 // check if a char is lower - comp_str1.c
 int		ft_is_lower(char c);
 // check if a char is upper - comp_str1.c
 int		ft_is_upper(char c);
-// returns the lenght of a given str
-int		ft_strlen(char *str);
-// compare ASCII values of two str until they dont match and return diff
-int		ft_strcmp(char *s1, char *s2);
-// compare ASCII values of a given char inside a str until they match and return true / false
-int		ft_find_char(char *s1, char c);
+// check if a char is isspace char - comp_str1.c
+int		ft_is_isspace(char c);
 
-// check if a num is present in str
+// check if a non-printable is present in str - comp_str2.c
+int		ft_has_non_printable(char *str);
+// check if a num is present in str - comp_str2.c
 int		ft_has_num(char *str);
-// check if a lowercase is present in str
+// check if a lowercase is present in str - comp_str2.c
 int		ft_has_lower(char *str);
-// check if a uppercase is present in str
+// check if a uppercase is present in str - comp_str2.c
 int		ft_has_upper(char *str);
-// check if a isspace(3) is present in str
+// check if a isspace(3) is present in str - comp_str2.c
 int		ft_has_isspace(char *str);
 
-// check if str is printable only
-int		ft_is_printable_only(char *str);
-// check if only nums are present in str
-int		ft_is_num_only(char *str);
-// check if only lowercase are present in str
-int		ft_is_lower_only(char *str);
-// check if only uppercase are present in str
-int		ft_is_upper_only(char *str);
-// check if only alpha are present in str
-int		ft_is_alpha_only(char *str);
+// returns the lenght of a given str - comp_str3.c
+int		ft_strlen(char *str);
+// compare ASCII values of two str until they dont match and return diff - comp_str3.c
+int		ft_strcmp(char *s1, char *s2);
+// check if a char is present in str and return true / false - comp_str3.c
+int		ft_find_char(char *str, char c);
+// compare ASCII values of a given char inside a str and if true return index - comp_str3.c
+int		ft_find_char_i(char *str, char c);
 
 
 /* Transformation and duplication */
