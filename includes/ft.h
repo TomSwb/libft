@@ -10,40 +10,28 @@
 // malloc lib
 # include <stdlib.h>
 
-/* Writing - writting.c */
+/* Writing */
 
-// write a char from a given var addr
+// write a char from a given var addr - writting.c 
 void	ft_putchar(char c);
-// write a whole str
+// write a whole str - writting.c 
 void	ft_putstr(char *src);
-// write an int
+// write an int - writting.c 
 void	ft_putnbr(int num);
-
-/* Transformation and duplication - trans_dup.c*/
-
-// lowercase everything
-char    *ft_lower_all(char *str);
-// upercase everything
-char    *ft_upper_all(char *str);
-// transform an atoi str into a valid int
-int		ft_atoi(char *str);
-// transform an int into a char *
-char	*ft_itoa(int num);
-// copies a str
-char	*ft_strcpy(char *str);
-// concatanate str together
-char	*ft_strcat(char *s1, char *s2);
-// dups a str into a new heap located addr
-char	*ft_dup(char *str);
 
 /* Comparisons str - comp_str.c*/
 
+// check if a char is lower - comp_str1.c
+int		ft_is_lower(char c);
+// check if a char is upper - comp_str1.c
+int		ft_is_upper(char c);
 // returns the lenght of a given str
 int		ft_strlen(char *str);
 // compare ASCII values of two str until they dont match and return diff
 int		ft_strcmp(char *s1, char *s2);
 // compare ASCII values of a given char inside a str until they match and return true / false
 int		ft_find_char(char *s1, char c);
+
 // check if a num is present in str
 int		ft_has_num(char *str);
 // check if a lowercase is present in str
@@ -52,6 +40,7 @@ int		ft_has_lower(char *str);
 int		ft_has_upper(char *str);
 // check if a isspace(3) is present in str
 int		ft_has_isspace(char *str);
+
 // check if str is printable only
 int		ft_is_printable_only(char *str);
 // check if only nums are present in str
@@ -62,6 +51,26 @@ int		ft_is_lower_only(char *str);
 int		ft_is_upper_only(char *str);
 // check if only alpha are present in str
 int		ft_is_alpha_only(char *str);
+
+
+/* Transformation and duplication */
+
+// lowercase everything - trans_str1.c
+char    *ft_lower_all(char *str);
+// upercase everything - trans_str1.c
+char    *ft_upper_all(char *str);
+// copies a str - trans_str1.c
+char	*ft_strcpy(char *str);
+// concatanate str together - trans_str1.c
+char	*ft_strcat(char *s1, char *s2);
+// dups a str into a new heap located addr - trans_str1.c
+char	*ft_dup(char *str);
+
+// transform an atoi str into a valid int - trans_str2.c
+int		ft_atoi(char *str);
+// transform an int into a char* - trans_str2.c
+char	*ft_itoa(int num);
+
 
 /* Mathematical formulas - math.c */
 
@@ -102,7 +111,7 @@ int		ft_find_next_prime(int num);
 
 // strlcat
 
-//foreach
+// foreach
 
 // map
 
