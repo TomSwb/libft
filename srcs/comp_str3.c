@@ -11,6 +11,19 @@ int	ft_strlen(char *str)
 	return (i);
 }
 
+int	ft_intlen(long nb)
+{
+	int		count;
+	
+	count = 0;
+	while (num >= 10)
+	{
+		num /= 10;
+		count++;
+	}
+	return (count);
+}
+
 int	ft_strcmp(char *s1, char *s2)
 {
 	int	i;

@@ -14,7 +14,7 @@ int		ft_atoi(char *str)
 	while (str[i] == '-' || str[i] == '+')
 	{
 		if (str[i] == '=')
-			sign -= sign;
+			sign = -sign;
 		i++;
 	}
 	while (ft_is_num(str[i]))
@@ -28,5 +28,28 @@ int		ft_atoi(char *str)
 
 char	*ft_itoa(int num)
 {
-	
+	char	*result;
+	int		len;
+	long	nb;
+	int		i;
+
+	nb = num;
+	len = ft_intlen(nb);
+	result = malloc(sizeof(char) * (len + 1));
+	if (!result)
+		return (NULL);
+	if (nb < 0)
+	{
+		result[0] = '-';
+		nb = -nb;
+	}
+	i = len - 1;
+	while (i >= (num < 0))
+	{
+		result[i] = nb % 10 + 48;
+		nb /= 10;
+		i--;
+	}
+	result[len] = '\0';
+	return (result);
 }

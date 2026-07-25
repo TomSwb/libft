@@ -45,6 +45,8 @@ int		ft_has_isspace(char *str);
 
 // returns the lenght of a given str - comp_str3.c
 int		ft_strlen(char *str);
+// returns the lenght of a given int - comp_str3.c
+int		ft_intlen(long nb);
 // compare ASCII values of two str until they dont match and return diff - comp_str3.c
 int		ft_strcmp(char *s1, char *s2);
 // check if a char is present in str and return true / false - comp_str3.c
