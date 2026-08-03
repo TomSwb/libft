@@ -33,28 +33,26 @@ git clone https://github.com/TomSwb/libft.git libft
 make
 ``` 
 
-3. Place them into a ./libft subfolder inside your project.
-
-4. Makefile:
+3. In your project Makefile:
 - Add this flag to your compiling: -I./libft
 - Add this var: LIBFT = ./libft/libft.a
 - Compile e.g. : $(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBFT)
 
-5. #include "../libft/lifbt.h" can be included as header in any file requiring it (adapt path as needed) - if called it will use the functions from the libft.a library
+4. #include "../libft/lifbt.h" can be included as header in any file requiring it (adapt path as needed) - if called it will use the functions from the libft.a library
 
-6. If you decide to alter any functions in the library dont forget to adapt the library Makefile and to run:
+5. If you decide to alter any functions in the library dont forget to adapt the library Makefile and to run:
 
 ```bash
 re
 ```
 
-7. You can also clean the .o file:
+6. You can also clean the .o file:
 
 ```bash
 clean
 ```
 
-8. And finally to clean both .o files and the ex .a;
+7. And finally to clean both .o files and the ex .a;
 
 ```bash
 fclean
