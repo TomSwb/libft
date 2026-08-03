@@ -74,9 +74,9 @@ Before beginning of cursus:
 
 AI:
 
-Before cursus began
-Perplexity: 
+Perplexity (before beginning of cursus): 
 1. A quick search to understand how to actually use the libft library in future projects.
+2. Confirm what certain Markdown syntax I found in repos do.
 
 ## Detailed description
 	
