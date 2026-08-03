@@ -35,11 +35,11 @@ make
 
 3. In your project Makefile:
 - Add this flag to your compiling: 
-	-I./libft
+	```-I./libft```
 - Add this var: 
-	LIBFT = ./libft/libft.a
+	```LIBFT = ./libft/libft.a```
 - Compile e.g.: 
-	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBFT)
+	```$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBFT)```
 
 4. #include "../libft/lifbt.h" can be included as header in any file requiring it (adapt path as needed) - if called it will use the functions from the libft.a library
 
