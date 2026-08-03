@@ -52,9 +52,11 @@ make
 	```
 
 4. 
+	
 	```text
 	#include "../libft/lifbt.h"
 	```
+
 	can be included as header in any file requiring it (adapt path as needed) - if called it will use the functions from the libft.a library
 
 5. If you decide to alter any functions in the library dont forget to adapt the library Makefile and to run:
