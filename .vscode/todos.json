@@ -4,52 +4,52 @@
     {
       "id": "d6948bd1-2bc3-45c2-8ec4-57925889e626",
       "title": "int \tft_isalnum(int c);",
-      "done": false,
+      "done": true,
       "note": " isalnum()\n              checks for  an  alphanumeric  character;  it  is\n              equivalent to (isalpha(c) || isdigit(c)).",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785420906364,
-      "updatedAt": 1785427354172,
+      "updatedAt": 1785766607977,
       "order": 1
     },
     {
       "id": "a1e66a95-372c-4eb4-92ca-eef3becd4b5e",
       "title": "int\t\tft_tolower(int c);",
-      "done": false,
+      "done": true,
       "note": "These functions convert lowercase letters to uppercase,\n       and vice versa.\n\n       If c is a lowercase letter, toupper() returns  its  up‐\n       percase  equivalent, if an uppercase representation ex‐\n       ists in the current locale.  Otherwise, it  returns  c.\n       The  toupper_l()  function  performs the same task, but\n       uses the locale referred to by the  locale  handle  lo‐\n       cale.\n\n       If c is an uppercase letter, tolower() returns its low‐\n       ercase equivalent, if a lowercase representation exists\n       in  the  current locale.  Otherwise, it returns c.  The\n       tolower_l() function performs the same task,  but  uses\n       the locale referred to by the locale handle locale.\n\n       If c is neither an unsigned char value nor EOF, the be‐\n       havior of these functions is undefined.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785420940054,
-      "updatedAt": 1785423236505,
-      "order": 2
+      "updatedAt": 1785770743915,
+      "order": 5
     },
     {
       "id": "a8101b54-82c4-4472-9d3e-bad21d470885",
       "title": "int\t\tft_toupper(int c);",
-      "done": false,
+      "done": true,
       "note": "These functions convert lowercase letters to uppercase,\n       and vice versa.\n\n       If c is a lowercase letter, toupper() returns  its  up‐\n       percase  equivalent, if an uppercase representation ex‐\n       ists in the current locale.  Otherwise, it  returns  c.\n       The  toupper_l()  function  performs the same task, but\n       uses the locale referred to by the  locale  handle  lo‐\n       cale.\n\n       If c is an uppercase letter, tolower() returns its low‐\n       ercase equivalent, if a lowercase representation exists\n       in  the  current locale.  Otherwise, it returns c.  The\n       tolower_l() function performs the same task,  but  uses\n       the locale referred to by the locale handle locale.\n\n       If c is neither an unsigned char value nor EOF, the be‐\n       havior of these functions is undefined.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785420985355,
-      "updatedAt": 1785423256439,
-      "order": 3
+      "updatedAt": 1785770460919,
+      "order": 4
     },
     {
       "id": "9fd7a8a4-12c6-49e2-abb8-bfad7222a75c",
       "title": "int \tft_isascii(int c);",
-      "done": false,
+      "done": true,
       "note": " isascii()\n              checks whether c is a 7-bit unsigned char  value\n              that fits into the ASCII character set.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421028691,
-      "updatedAt": 1785423259988,
-      "order": 4
+      "updatedAt": 1785769090630,
+      "order": 2
     },
     {
       "id": "50b15e77-24ec-49cd-bde1-50803862bccb",
       "title": "int \tft_isprint(int c);",
-      "done": false,
+      "done": true,
       "note": "isprint()\n              checks for  any  printable  character  including\n              space.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421058638,
-      "updatedAt": 1785423270307,
-      "order": 5
+      "updatedAt": 1785770080341,
+      "order": 3
     },
     {
       "id": "6c28f118-0f67-4c6f-8f08-d473092531da",

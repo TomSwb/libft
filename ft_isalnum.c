@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/03 16:42:15 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:35:14 by tomswb           ###   ########.fr       */
+/*   Created: 2026/08/03 16:49:19 by tomswb            #+#    #+#             */
+/*   Updated: 2026/08/03 17:35:17 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-checks for an alphabetic character; in the standard  "C"
-locale,  it is equivalent to (isupper(c) || islower(c)).
-In some locales, there may be additional characters  for
-which isalpha() is true—letters which are neither upper‐
-case nor lowercase.
+Checks for  an  alphanumeric  character;  it  is
+equivalent to (isalpha(c) || isdigit(c)).
 
 * @param int c 
 * @return int 
 */
-int	ft_isalpha(int c)
+int	ft_isalnum(int c)
 {
-	if ((c >= 'A' && c <= 'Z')
-		|| (c >= 'a' && c <= 'z'))
+	if ((c >= 'a' && c <= 'z')
+		|| (c >= 'A' && c <= 'Z')
+		|| (c >= '0' && c <= '9'))
 		return (1);
 	return (0);
 }

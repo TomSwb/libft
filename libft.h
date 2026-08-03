@@ -1,3 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
+/*   Updated: 2026/08/03 17:35:28 by tomswb           ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/**
+ * @brief
+	Header for complete libft library, defining all required functions
+	and struct.
+ 
+ */
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -13,12 +31,12 @@
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
-//TODO: int 	ft_isalnum(int c);
-//TODO: int 	ft_isascii(int c);
-//TODO: int 	ft_isprint(int c);
+int		ft_isalnum(int c);
+int		ft_isascii(int c);
+int		ft_isprint(int c);
 
-//TODO: int		ft_toupper(int c);
-//TODO: int		ft_tolower(int c);
+int		ft_toupper(int c);
+int		ft_tolower(int c);
 
 //TODO: int		atoi(const char *nptr);
 
