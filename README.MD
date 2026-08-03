@@ -6,9 +6,10 @@
 
 ## Description
 	
-### Goal: Create my own C library (a collection of functions) to use during the curriculum
+#### Goal:
+Create my own C library (a collection of functions) to use during the curriculum
 
-##### Brief overview:	
+#### Brief overview:	
 Contains a total of XXX functions made according to :
 1. Libc functions (with some adaptations).
 2. Additional functions (according to specific instructions).
