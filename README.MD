@@ -1,6 +1,6 @@
 ### ⚠️ Currently being build, this repo includes my test files and todos
 
-*This project has been created as part of the 42 curriculum by <tschwab>()*
+*This project has been created as part of the 42 curriculum by \<tschwab>*
 
 # Libft - a library by TomSwb
 
