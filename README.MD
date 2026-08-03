@@ -68,13 +68,16 @@ System:
 - Linux man for the libc related functions
 
 Github:
+
 Before beginning of cursus: 
 - https://github.com/mrochedy/42-Libft/tree/main
 
 Other:
-[Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - To learn MD syntax
+
+- [Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - To learn MD syntax
 
 AI:
+
 Before beginning of cursus
 - Perplexity: 
 	1. A quick search to understand how to actually use the libft library in future projects.
