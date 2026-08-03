@@ -1,10 +1,10 @@
 ### ⚠️ Currently being build, this repo includes my test files and todos
 
-*This project has been created as part of the 42 curriculum by <tschwab>*
+*This project has been created as part of the 42 curriculum by <tschwab>()*
 
 # Libft - a library by TomSwb
 
-## "Description"
+## Description
 	
 	Goal: Create my own C library (a collection of functions) to use during the curriculum
 	
@@ -18,7 +18,7 @@
 				libft.h.
 				Makefile.
 
-## "Instructions"
+## Instructions
 
 	1: Clone the repo at the root/libft of your project (creating the folder in the process):
 
@@ -59,7 +59,7 @@
 		fclean
 		```
 
-## "Resources"
+## Resources
 	42:
 		- `libft.pdf` version: 19.3
 	System:
@@ -72,7 +72,7 @@
 			Perplexity: 
 				- A quick search to understand how to actually use the libft library in future projects.
 
-## "Detailed description"
+## Detailed description
 	
 	List of all the available functions:
 		
