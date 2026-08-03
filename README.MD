@@ -75,8 +75,8 @@ Before beginning of cursus:
 AI:
 
 Before cursus began:
-Perplexity: 
-- A quick search to understand how to actually use the libft library in future projects.
+- Perplexity: 
+1. A quick search to understand how to actually use the libft library in future projects.
 
 ## Detailed description
 	
