@@ -1,4 +1,4 @@
-### ⚠️ Currently being build, this repo includes my test files and todos
+##### ⚠️ Currently being build, this repo includes my test files and todos
 
 *This project has been created as part of the 42 curriculum by \<tschwab>*
 
@@ -104,7 +104,7 @@ fclean
 
 #### List of all the available functions:
 
-###### Libc replica:
+##### Libc replica:
 
 - `ft_isprint`: Checks for  any  printable  character  including space.
 - `ft_isascii`: Checks if a given int c is a 7-bit unsigned char value that fits inside the ASCII characters set.
@@ -115,10 +115,10 @@ fclean
 - `ft_tolower`: If c is an uppercase letter, returns its lowercase equivalent, if a lowercase representation exists in  the  current locale. Otherwise, it returns c.
 - `ft_toupper`: If c is an lowercase letter, returns its uppercase equivalent, if a uppercase representation exists in  the  current locale. Otherwise, it returns c.
 
-###### Additional functions:
+##### Additional functions:
 
 - [ ] Coming soon...
 
-###### Linked list related:
+##### Linked list related:
 
 - [ ] Coming soon...
