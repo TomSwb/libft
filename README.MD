@@ -6,9 +6,9 @@
 
 ## Description
 	
-Goal: Create my own C library (a collection of functions) to use during the curriculum
+### Goal: Create my own C library (a collection of functions) to use during the curriculum
 
-Brief overview:	
+##### Brief overview:	
 Contains a total of XXX functions made according to :
 1. Libc functions (with some adaptations).
 2. Additional functions (according to specific instructions).
@@ -47,13 +47,13 @@ make
 re
 ```
 
-7: You can also clean the .o file:
+7. You can also clean the .o file:
 
 ```bash
 clean
 ```
 
-8: And finally to clean both .o files and the ex .a;
+8. And finally to clean both .o files and the ex .a;
 
 ```bash
 fclean
@@ -61,33 +61,32 @@ fclean
 
 ## Resources
 
-42:
+##### 42:
 - `libft.pdf` version: 19.3
 
-System:
+##### System:
 - Linux man for the libc related functions
 
-Github:
+##### Github:
 
-Before beginning of cursus: 
+###### Before beginning of cursus: 
 - https://github.com/mrochedy/42-Libft/tree/main
 
-Other:
-
+##### Other:
 - [Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - To learn MD syntax
 
-AI:
+##### AI:
 
-Before beginning of cursus
+###### Before beginning of cursus
 - Perplexity: 
 	1. A quick search to understand how to actually use the libft library in future projects.
 	2. Confirm what certain Markdown syntax I found in repos do.
 
 ## Detailed description
-	
-List of all the available functions:
-	
-Libc replica:
+
+#### List of all the available functions:
+
+###### Libc replica:
 
 - `ft_isprint`: Checks for  any  printable  character  including space.
 - `ft_isascii`: Checks if a given int c is a 7-bit unsigned char value that fits inside the ASCII characters set.
@@ -98,10 +97,10 @@ Libc replica:
 - `ft_tolower`: If c is an uppercase letter, returns its lowercase equivalent, if a lowercase representation exists in  the  current locale. Otherwise, it returns c.
 - `ft_toupper`: If c is an lowercase letter, returns its uppercase equivalent, if a uppercase representation exists in  the  current locale. Otherwise, it returns c.
 
-Additional functions:
+###### Additional functions:
 
 - [ ] Coming soon...
 
-Linked list related:
+###### Linked list related:
 
 - [ ] Coming soon...
