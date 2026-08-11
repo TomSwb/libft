@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:53:39 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/11 08:54:46 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
 
-//TODO: int		atoi(const char *nptr);
+int		ft_atoi(const char *nptr);
 
 //TODO: size_t	ft_strlen(const char *s);
 //TODO: size_t	ft_strlcpy(char dst[.dsize], const char *src);

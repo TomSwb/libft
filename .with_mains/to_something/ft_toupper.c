@@ -4,8 +4,8 @@
  * @date 2026-08-03
  */
 
- #include <stdio.h>
- #include <ctype.h>
+#include <stdio.h>
+#include <ctype.h>
 
  int	ft_toupper(int c);
 
@@ -16,7 +16,7 @@
 	if (ac > 1)
 		c = av[1][0];
 	else
-	 	(void) ac;
+		(void) ac;
 	printf("ft: %d\n", ft_toupper(c));
 	printf("OG: %d", toupper(c));
 }

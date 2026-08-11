@@ -6,7 +6,7 @@
 #    By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tomswb            #+#    #+#              #
-#    Updated: 2026/08/03 17:21:28 by tomswb           ###   ########.fr        #
+#    Updated: 2026/08/11 08:55:12 by tomswb           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,8 @@ SOURCES = ft_isalpha.c \
 		ft_isascii.c \
 		ft_isprint.c \
 		ft_toupper.c \
-		ft_tolower.c
+		ft_tolower.c \
+		ft_atoi.c
 
 CC = gcc
 
