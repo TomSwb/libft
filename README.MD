@@ -115,6 +115,10 @@ fclean
 
 - `ft_tolower`: If c is an uppercase letter, returns its lowercase equivalent, if a lowercase representation exists in  the  current locale. Otherwise, it returns c.
 - `ft_toupper`: If c is an lowercase letter, returns its uppercase equivalent, if a uppercase representation exists in  the  current locale. Otherwise, it returns c.
+- `ft_atoi`: Converts a given char to int, epuring spaces and accounting for max 1 occurence of + || - sign.
+
+- `ft_strlen`:  Returns the length of the given char *s.
+- `ft_strlcpy`: Copy src into dest and return the len of the wanted result (len of src).
 
 ##### Additional functions:
 
