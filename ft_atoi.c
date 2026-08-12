@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 08:51:12 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/11 08:52:54 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/12 16:36:54 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 Converts a given char to int, epuring spaces and 
 accounting for max 1 occurence of + || - sign
   
- * @param nptr 
+ * @param char *nptr 
  * @return int 
  */
 int	ft_atoi(const char *nptr)
@@ -26,7 +26,7 @@ int	ft_atoi(const char *nptr)
 	int	count;
 
 	sign = 1;
-	while (nptr[i] == 32 
+	while (nptr[i] == 32
 		|| nptr[i] >= 9 && nptr[i] <= 13)
 		i++;
 	count = 0;

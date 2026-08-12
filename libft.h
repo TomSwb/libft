@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/11 08:54:46 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/12 16:37:17 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@
 
 // read / write / close 
 # include <unistd.h> 
+// size_t
+# include <stddef.h>
 // malloc 
 # include <stdlib.h>
 
@@ -37,13 +39,14 @@ int		ft_isprint(int c);
 
 int		ft_toupper(int c);
 int		ft_tolower(int c);
-
 int		ft_atoi(const char *nptr);
 
-//TODO: size_t	ft_strlen(const char *s);
+size_t	ft_strlen(const char *s);
 //TODO: size_t	ft_strlcpy(char dst[.dsize], const char *src);
 //TODO: int		ft_strncmp(const char s1[.n], const char s2[.n], size_t n);
 //TODO: char	*strnstr(const char *big, const char *little, size_t len);
+//TODO: char	*ft_strchr(const char *s, int c);
+//TODO: char	*ft_strrchr(const char *s, int c);
 
 //TODO: void	*ft_memset(void s[.n], int c, size_t n);
 //TODO: void	ft_bzero(void s[.n], size_t n);
@@ -51,9 +54,6 @@ int		ft_atoi(const char *nptr);
 //TODO: void	*ft_memmove(void dest[.n], const void src[.n], size_t n);
 //TODO: void	*ft_memchr(const void s[.n], int c, size_t n);
 //TODO: int		ft_memcmp(const void s1[.n], const void s2[.n], size_t n);
-
-//TODO: char	*ft_strchr(const char *s, int c);
-//TODO: char	*ft_strrchr(const char *s, int c);
 
 //TODO: void	*ft_calloc(size_t n, size_t size);
 //TODO: char	*ft_strdup(const char *s);
