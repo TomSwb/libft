@@ -64,11 +64,11 @@
     {
       "id": "bb647cfe-da1b-4829-a57e-baaf4e1e100e",
       "title": "size_t\tft_strlcpy(char dst[.dsize], const char *src);",
-      "done": false,
+      "done": true,
       "note": " strlcpy(3bsd)\n       strlcat(3bsd)\n              Copy  and catenate the input string into a destina‐\n              tion string.  If the destination buffer, limited by\n              its size, isn't large enough to hold the copy,  the\n              resulting string is truncated (but it is guaranteed\n              to  be null-terminated).  They return the length of\n              the total string they tried to create.\n\n              Check BUGS before using these functions.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421113869,
-      "updatedAt": 1785423281475,
+      "updatedAt": 1786548023194,
       "order": 8
     },
     {
