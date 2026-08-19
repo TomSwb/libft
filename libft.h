@@ -14,7 +14,6 @@
  * @brief
 	Header for complete libft library, defining all required libraries, functions
 	and struct.
- 
  */
 
 #ifndef LIBFT_H
@@ -31,6 +30,7 @@
 
 /*****  Functions *****/
 
+/** Part 1 **/
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
 int		ft_isalnum(int c);
@@ -57,5 +57,8 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
 
 //TODO: void	*ft_calloc(size_t n, size_t size);
 //TODO: char	*ft_strdup(const char *s);
+
+
+/** Part 2 **/
 
 #endif
