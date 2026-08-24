@@ -1,5 +1,9 @@
+/**
+ * @author TomSwb
+ * @version 0.1
+ * @date 2026-08-21
+ */
 
-#include <stddef.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -7,10 +11,32 @@ char  *ft_strchr(const char s*, int c);
 
 int  main(int ac, char **av)
 {
-  
+  char  *s;
+  int    c;
+
+  if (ac > 2)
+  {
+    s = av[1];
+    c = av[2][0];
+  }
+  else
+      (void) ac;
+  printf("FT: %s\n", ft_strchr(s, c));
+  printf("OG: %s\n", strchr(s, c));
 }
 
 char  *ft_strchr(const char s*, int c)
 {
+  char  ch;
   
+  char ch = (char)c;
+  while (*s)
+  {
+    if (*s == c)
+      return ((char *)s);
+    s++;
+  }
+  if (ch == '\0')
+    return ((char *)s);
+  return (NULL);
 }
