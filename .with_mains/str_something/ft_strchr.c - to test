@@ -27,16 +27,14 @@ int  main(int ac, char **av)
 
 char  *ft_strchr(const char s*, int c)
 {
-  char  ch;
-  
-  char ch = (char)c;
+  c = (char)c;
   while (*s)
   {
     if (*s == c)
       return ((char *)s);
     s++;
   }
-  if (ch == '\0')
+  if (c == '\0')
     return ((char *)s);
   return (NULL);
 }
