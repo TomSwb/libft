@@ -119,6 +119,11 @@ fclean
 
 - `ft_strlen`:  Returns the length of the given char *s.
 - `ft_strlcpy`: Copy src into dest and return the len of the wanted result (len of src).
+- `ft_strncmp`: Compares not more than n bytes (bytes that follow a NULL character are not compared) from the array pointed to by s1 to the array pointed to by s2. It returns the value difference of the first char not equal in both strings. It returns 0 if both strings are equal up to n. The sign of a non-zero return value is determined by the sign of the difference between the values of the first pair of bytes (both interpreted as type unsigned char) that differ in the strings being compared
+- `ft_strnstr`:  Locates the first occurrence of the null-terminated string 'little' in the string 'big', where not more than 'len' characters are searched. Characters that appear after a '\0' character are not searched. 
+- `ft_strchr`:  Return a pointer to the first matched character or NULL  if the character is not found.  The terminating null byte is considered part of the string, so that if c is specified as '\0', this function return a pointer to the terminator.
+- `ft_strrchr`:  Return a pointer to the last matched character or NULL  if the character is not found.  The terminating null byte is considered part of the string, so that if c is specified as '\0', this function return a pointer to the terminator.
+
 
 ##### Additional functions:
 
