@@ -3,14 +3,45 @@
 #include <stdio.h>
 #include <string.h>
 
-char  *ft_strnstr(const char big*, const char little*, size_t len);
+char  *ft_strnstr(const char *big, const char *little, size_t len);
 
 int  main(int ac, char **av)
 {
-  
+  const char  *big;
+  const char  *little;
+  size_t      len;
+
+  len = 0;
+  if (ac > 3)
+  {
+    big = av[1];
+    little = av[2];
+    len = av[3][0];
+  }
+  else
+    (void) ac;
+  printf("FT: %s\n", ft_strnstr(big, little, len));
+  printf("OG: %s\n", strnstr(big, little, len));
 }
 
 char  *ft_strnstr(const char big*, const char little*, size_t len)
 {
-  
+  size_t  i;
+  size_t  j;
+
+  i = 0;
+  if (little[i] == NULL)
+    return (big);
+  while (big[i] && i < len)
+  {
+    j = 0;
+    while (big[i] == little[j])
+    {
+      j++;
+      if (little[j] == '\0')
+        return (big[i]);
+    }
+    i++;
+  }
+  return (NULL);
 }
