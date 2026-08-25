@@ -1,31 +1,31 @@
 /**
- * @author TomSwb
- * @version 0.1
- * @date 2026-08-21
- */
+* @author TomSwb
+* @version 0.1
+* @date 2026-08-21
+*/
 
 #include <stdio.h>
 #include <string.h>
 
-char  *ft_strchr(const char s*, int c);
+char  *ft_strchr(const char *s, int c);
 
 int  main(int ac, char **av)
 {
   char  *s;
   int    c;
 
-  if (ac > 2)
+  if (ac == 3)
   {
     s = av[1];
     c = av[2][0];
   }
   else
-      (void) ac;
+      return (-1);
   printf("FT: %s\n", ft_strchr(s, c));
   printf("OG: %s\n", strchr(s, c));
 }
 
-char  *ft_strchr(const char s*, int c)
+char  *ft_strchr(const char *s, int c)
 {
   c = (char)c;
   while (*s)

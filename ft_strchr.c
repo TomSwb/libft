@@ -1,41 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/12 17:14:09 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/25 15:38:38 by tomswb           ###   ########.fr       */
+/*   Created: 2026/08/25 15:39:19 by tomswb            #+#    #+#             */
+/*   Updated: 2026/08/25 18:00:56 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Copy src into dest and return the len of the wanted result (len of src)  
+Return a pointer to the first matched character 
+or NULL  if the character is not found.  The terminating null byte is 
+considered part of the string, so that if c is specified as '\0', 
+this function return a pointer to the terminator.
 
-* @param char *dest 
-* @param char *src 
-* @param size_t dsize 
-* @return size_t result 
+* @param s 
+* @param c 
+* @return char* 
 */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	result;
-	size_t	len;
-
-	result = 0;
-	while (src[result])
-		result++;
-	len = 0;
-	while (len < dsize)
+	c = (char)c;
+	while (*s)
 	{
-		dst[len] = src[len];
-		len++;
+		if (*s == c)
+			return ((char *)s);
+		s++;
 	}
-	dst[len] = '\0';
-	return (result);
+	if (c == '\0')
+		return ((char *)s);
+	return (NULL);
 }

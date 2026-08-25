@@ -17,7 +17,7 @@ int	main(int ac, char **av)
 	if (ac > 1)
 		s = av[1];
 	else
-		(void) ac;
+    	return (-1);
 	printf("ft: %zu\n", ft_strlen(s));
 	printf("OG: %zu", strlen(s));
 }

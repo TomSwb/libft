@@ -114,31 +114,31 @@
     {
       "id": "fa60e800-194c-42c6-b890-a6a18824cf4f",
       "title": "char\t*ft_strchr(const char *s, int c);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       char *strchr(const char *s, int c);\n\nDESCRIPTION\n       The  strchr()  function returns a pointer to the first oc‐\n       currence of the character c in the string s.\n\n       Here \"character\" means \"byte\"; these functions do not work\n       with wide or multibyte characters.\n\nRETURN VALUE\n       The strchr() and strrchr() functions return a  pointer  to\n       the  matched  character  or  NULL  if the character is not\n       found.  The terminating null byte is  considered  part  of\n       the string, so that if c is specified as '\\0', these func‐\n       tions return a pointer to the terminator.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421452552,
-      "updatedAt": 1785423297510,
+      "updatedAt": 1787665899506,
       "order": 23
     },
     {
       "id": "5f47e998-5b3b-419a-b5be-bb2cbbe6138e",
       "title": "char\t*ft_strrchr(const char *s, int c);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       char *strrchr(const char *s, int c);\n\nDESCRIPTION\n        The strrchr() function returns a pointer to the  last  oc‐\n       currence of the character c in the string s.\n\n       Here \"character\" means \"byte\"; these functions do not work\n       with wide or multibyte characters.\n\nRETURN VALUE\n       The strchr() and strrchr() functions return a  pointer  to\n       the  matched  character  or  NULL  if the character is not\n       found.  The terminating null byte is  considered  part  of\n       the string, so that if c is specified as '\\0', these func‐\n       tions return a pointer to the terminator.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421494920,
-      "updatedAt": 1785423300398,
+      "updatedAt": 1787665903351,
       "order": 15
     },
     {
       "id": "bd003525-b612-4e0a-99e0-0c997a8e46e6",
       "title": "int\t\tft_strncmp(const char s1[.n], const char s2[.n], size_t n);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       int strncmp(const char s1[.n], const char s2[.n], size_t n);\n\nDESCRIPTION\n       The  strcmp() function compares the two strings s1 and s2.\n       The locale is not taken into account (for  a  locale-aware\n       comparison, see strcoll(3)).  The comparison is done using\n       unsigned characters.\n\n       strcmp()  returns  an integer indicating the result of the\n       comparison, as follows:\n\n       •  0, if the s1 and s2 are equal;\n\n       •  a negative value if s1 is less than s2;\n\n       •  a positive value if s1 is greater than s2.\n\n       The strncmp() function is similar, except it compares only\n       the first (at most) n bytes of s1 and s2.\n\nRETURN VALUE\n       The strcmp() and strncmp()  functions  return  an  integer\n       less  than,  equal  to, or greater than zero if s1 (or the\n       first n bytes thereof) is found, respectively, to be  less\n       than, to match, or be greater than s2.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421767708,
-      "updatedAt": 1785423303639,
+      "updatedAt": 1787668350427,
       "order": 16
     },
     {

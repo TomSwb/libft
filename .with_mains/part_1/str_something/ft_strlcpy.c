@@ -25,7 +25,7 @@ int	main(int ac, char **av)
 			dsize++;
 	}
 	else
-		(void) ac;
+    	return (-1);
 	printf("Dest = av[1]: %s, ", dest);
 	printf("Src = av[2]: %s\n", src);
 	printf("ft: %zu\n", ft_strlcpy(dest, src, dsize));

@@ -6,18 +6,18 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 08:51:12 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/12 16:36:54 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/25 15:39:51 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- * @brief 
+* @brief 
 Converts a given char to int, epuring spaces and 
 accounting for max 1 occurence of + || - sign
-  
- * @param char *nptr 
- * @return int 
- */
+
+* @param char *nptr 
+* @return int 
+*/
 int	ft_atoi(const char *nptr)
 {
 	int	result;
