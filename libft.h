@@ -43,7 +43,7 @@ int		ft_atoi(const char *nptr);
 
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
-//TODO: int		ft_strncmp(const char s1*, const char s2*, size_t n);
+//TODO: int		ft_strncmp(const char *s1, const char *s2, size_t n);
 //TODO: char	*ft_strnstr(const char *big, const char *little, size_t len);
 //TODO: char	*ft_strchr(const char *s, int c);
 //TODO: char	*ft_strrchr(const char *s, int c);
