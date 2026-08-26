@@ -105,7 +105,7 @@ fclean
 
 #### List of all the available functions:
 
-##### Libc replica:
+##### Part 1: Libc replica:
 
 - `ft_isprint`: Checks for  any  printable  character  including space.
 - `ft_isascii`: Checks if a given int c is a 7-bit unsigned char value that fits inside the ASCII characters set.
@@ -125,10 +125,10 @@ fclean
 - `ft_strrchr`:  Return a pointer to the last matched character or NULL  if the character is not found.  The terminating null byte is considered part of the string, so that if c is specified as '\0', this function return a pointer to the terminator.
 
 
-##### Additional functions:
+##### Part 2: Additional functions:
 
 - [ ] Coming soon...
 
-##### Linked list related:
+##### Part 3: Linked list related:
 
 - [ ] Coming soon...
