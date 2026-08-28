@@ -6,18 +6,21 @@
 #    By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tomswb            #+#    #+#              #
-#    Updated: 2026/08/11 08:55:12 by tomswb           ###   ########.fr        #
+#    Updated: 2026/08/28 23:04:26 by tomswb           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
 SOURCES = ft_atoi.c \
+		ft_bzero.c \
 		ft_isprint.c \
 		ft_isalnum.c \
 		ft_isalpha.c \
 		ft_isascii.c \
 		ft_isdigit.c \
+		ft_memchr.c \
+		ft_memcmp.c \
 		ft_strchr.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
