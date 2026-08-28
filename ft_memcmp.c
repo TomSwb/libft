@@ -6,10 +6,9 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 22:34:31 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/28 22:43:28 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/28 23:02:49 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include <stddef.h>
 
@@ -22,7 +21,7 @@ Returns the result of comparing the bytes value up to 'n' number of bytes.
 * @param n 
 * @return int 
 */
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*str1;
 	const unsigned char	*str2;

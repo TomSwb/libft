@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/25 16:30:36 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/28 22:42:52 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/28 23:02:59 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,10 @@ Returns the difference of value between the char in same index of
 * @param n 
 * @return int 
 */
-
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-
 	while (n > 0 && (*s1 || *s2))
 	{
 		if (*s1 != *s2)
