@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/25 16:30:36 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/28 22:42:52 by tomswb           ###   ########.fr       */
+/*   Created: 2026/08/28 22:34:31 by tomswb            #+#    #+#             */
+/*   Updated: 2026/08/28 22:43:28 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
+#include <stddef.h>
+
 /**
 * @brief 
-Returns the difference of value between the char in same index of 
-'s1' and 's2' maximum of 'n' len or before 'NULL' char
+Returns the result of comparing the bytes value up to 'n' number of bytes.
 
 * @param s1 
 * @param s2 
 * @param n 
 * @return int 
 */
-
-#include "libft.h"
-
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_memcmp(const void *s1, const void *s2, size_t n)
 {
+	const unsigned char	*str1;
+	const unsigned char	*str2;
 
-	while (n > 0 && (*s1 || *s2))
+	str1 = s1;
+	str2 = s2;
+	while (n > 0 && (*str1 || *str2))
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		if (*str1 != *str2)
+			return (*str1 - *str2);
+		str1++;
+		str2++;
 		n--;
 	}
 	return (0);
