@@ -21,8 +21,8 @@ int	main(int ac, char **av)
 		c = av[1][0];
 	else
 		return (-1);
-	printf("FT: %c found\n", ft_memchr(buf, c, n));
-	printf("OG: %c found\n", memchr(buf, c, n));
+	printf("FT: %p found\n", ft_memchr(buf, c, n));
+	printf("OG: %p found\n", memchr(buf, c, n));
 	return (0);
 }
 
