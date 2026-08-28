@@ -124,6 +124,8 @@ fclean
 - `ft_strchr`:  Return a pointer to the first matched character or NULL  if the character is not found.  The terminating null byte is considered part of the string, so that if c is specified as '\0', this function return a pointer to the terminator.
 - `ft_strrchr`:  Return a pointer to the last matched character or NULL  if the character is not found.  The terminating null byte is considered part of the string, so that if c is specified as '\0', this function return a pointer to the terminator.
 
+- `ft_bzero`:  Fills the given array up to index 'len' with '\0' char.
+- `ft_memchr`:  Returns the address of the given 'int c' char if found in the given array.
 
 ##### Part 2: Additional functions
 
