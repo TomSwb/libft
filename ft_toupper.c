@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 17:20:38 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:34:54 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/29 16:36:25 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ Otherwise, it  returns  c.
 * @param int c 
 * @return int 
 */
+
 int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')

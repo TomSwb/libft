@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:49:19 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:35:17 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/29 16:35:42 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ equivalent to (isalpha(c) || isdigit(c)).
 * @param int c 
 * @return int 
 */
+
 int	ft_isalnum(int c)
 {
 	if ((c >= 'a' && c <= 'z')

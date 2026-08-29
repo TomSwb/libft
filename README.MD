@@ -127,6 +127,8 @@ fclean
 - `ft_bzero`:  Fills the given array up to index 'len' with '\0' char.
 - `ft_memchr`:  Returns the address of the given 'int c' char if found in the given array.
 - `ft_memcmp`:  Returns the result of comparing the bytes value up to 'n' number of bytes.
+- `ft_memcpy`:  Returns a pointer to the given 'dest' array after copying 'n' bytes 
+values from 'src'.
 
 ##### Part 2: Additional functions
 

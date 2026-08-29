@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 17:34:09 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:51:53 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/29 16:36:23 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ Otherwise, it returns c.
 * @param int c 
 * @return int 
 */
+
 int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')

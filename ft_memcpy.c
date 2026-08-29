@@ -1,35 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/28 21:38:55 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/29 16:35:34 by tomswb           ###   ########.fr       */
+/*   Created: 2026/08/29 17:12:42 by tomswb            #+#    #+#             */
+/*   Updated: 2026/08/29 17:14:33 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Fills the given array up to index 'len' with '\0' char.
+Returns a pointer to the given 'dest' array after copying 'n' bytes 
+values from 'src'.
 
-* @param b 
-* @param len 
+* @param dest 
+* @param src 
+* @param n 
+* @return void* 
 */
 
 #include "libft.h"
 
-void	ft_bzero(void *b, size_t len)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*ptr;
-	size_t			i;
+	unsigned char	*u_dest;
+	const unsigned char	*u_src;
 
-	ptr = (unsigned char *)b;
-	i = 0;
-	while (i < len)
+	u_dest = (unsigned char *)dest;
+	u_src = (const unsigned char *)src;
+	while (n > 0)
 	{
-		ptr[i] = '\0';
-		i++;
+		*u_dest = *u_src;
+		u_dest++;
+		u_src++;
+		n--;
 	}
+	return (dest);
 }

@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:42:15 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:35:14 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/29 16:35:44 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ case nor lowercase.
 * @param int c 
 * @return int 
 */
+
 int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z')

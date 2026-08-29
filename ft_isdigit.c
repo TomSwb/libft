@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:46:23 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:35:06 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/29 16:35:49 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ checks for a digit (0 through 9).
 * @param int c 
 * @return int 
 */
+
 int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')

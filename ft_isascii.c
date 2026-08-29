@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:50:06 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/03 17:35:10 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/29 16:35:47 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ that fits inside the ASCII chararcter set.
 * @param int c 
 * @return int 
 */
+
 int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
