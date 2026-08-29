@@ -129,6 +129,8 @@ fclean
 - `ft_memcmp`:  Returns the result of comparing the bytes value up to 'n' number of bytes.
 - `ft_memcpy`:  Returns a pointer to the given 'dest' array after copying 'n' bytes 
 values from 'src'.
+- `ft_memmove`:  ...
+- `ft_memset`:  Returns the given 's' array filled with the 'c' char up to 'n' bytes.
 
 ##### Part 2: Additional functions
 

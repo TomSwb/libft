@@ -16,11 +16,10 @@ int	main(void)
 	char	ft_dest[] = "World";
 	char	og_dest[] = "World";
 	char	src[] = "Hello";
-	size_t	n;
+	size_t	n = sizeof(ft_dest);
 	void	*ft_return;
 	void	*og_return;
 
-	n = 5;
 	ft_return = ft_memcpy(ft_dest, src, n);
 	og_return = memcpy(og_dest, src, n);
 	printf("ft: %s | return: %p | dest: %p\n", ft_dest, ft_return, (void *)ft_dest);
