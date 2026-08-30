@@ -74,41 +74,41 @@
     {
       "id": "c9965aab-96d7-45bc-87cf-b08dcfde6fda",
       "title": "void\t*ft_memset(void s[.n], int c, size_t n);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memset(void s[.n], int c, size_t n);\n\nDESCRIPTION\n       The  memset() function fills the first n bytes of the mem‐\n       ory area pointed to by s with the constant byte c.\n\nRETURN VALUE\n       The memset() function returns a pointer to the memory area\n       s.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421201779,
-      "updatedAt": 1785423285045,
+      "updatedAt": 1788080967302,
       "order": 11
     },
     {
       "id": "70d91afc-cc3b-4b86-b03c-6a2995b3f5e4",
       "title": "void\tft_bzero(void s[.n], size_t n);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <strings.h>\n\n       void bzero(void s[.n], size_t n);\n\n       #include <string.h>\n\n       void explicit_bzero(void s[.n], size_t n);\n\nDESCRIPTION\n       The bzero() function erases the data in the n bytes of the\n       memory  starting at the location pointed to by s, by writ‐\n       ing zeros (bytes containing '\\0') to that area.\n\n       The explicit_bzero() function performs the  same  task  as\n       bzero().   It  differs  from bzero() in that it guarantees\n       that compiler optimizations will not remove the erase  op‐\n       eration if the compiler deduces that the operation is \"un‐\n       necessary\".\n\nRETURN VALUE\n       None.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421208648,
-      "updatedAt": 1785423288481,
+      "updatedAt": 1788080968192,
       "order": 12
     },
     {
       "id": "7831e586-50f4-411f-a765-a03ad75a08c1",
       "title": "void\t*ft_memcpy(void dest[.n], const void src(.n), size_t n);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memcpy(void dest[restrict .n], const void src[restrict .n],\n                    size_t n);\n\nDESCRIPTION\n       The  memcpy() function copies n bytes from memory area src\n       to memory area dest.  The memory areas must  not  overlap.\n       Use memmove(3) if the memory areas do overlap.\n\nRETURN VALUE\n       The memcpy() function returns a pointer to dest.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421229948,
-      "updatedAt": 1785423291624,
+      "updatedAt": 1788080969190,
       "order": 13
     },
     {
       "id": "eff2e297-ab65-42da-8f12-0a44cc11ebac",
       "title": "void\t*ft_memmove(void dest[.n], const void src[.n], size_t n);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memmove(void dest[.n], const void src[.n], size_t n);\n\nDESCRIPTION\n       The memmove() function copies n bytes from memory area src\n       to  memory area dest.  The memory areas may overlap: copy‐\n       ing takes place as though  the  bytes  in  src  are  first\n       copied into a temporary array that does not overlap src or\n       dest, and the bytes are then copied from the temporary ar‐\n       ray to dest.\n\nRETURN VALUE\n       The memmove() function returns a pointer to dest.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421268185,
-      "updatedAt": 1785423294466,
+      "updatedAt": 1788080969654,
       "order": 14
     },
     {
@@ -144,21 +144,21 @@
     {
       "id": "b05ae464-380a-4494-ab8b-d193c86cc303",
       "title": "void\t*ft_memchr(const void s[.n], int c, size_t n);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memchr(const void s[.n], int c, size_t n);\n\nDESCRIPTION\n       The memchr() function scans the initial  n  bytes  of  the\n       memory  area  pointed to by s for the first instance of c.\n       Both c and the bytes of the memory area pointed  to  by  s\n       are interpreted as unsigned char.\n\nRETURN VALUE\n       The  memchr()  and memrchr() functions return a pointer to\n       the matching byte or NULL if the character does not  occur\n       in the given memory area.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785421962673,
-      "updatedAt": 1785423309900,
+      "updatedAt": 1788080971980,
       "order": 17
     },
     {
       "id": "d21141e4-b360-4242-8dff-48271c100074",
       "title": "int\t\tft_memcmp(const void s1[.n], const void s2[.n], size_t n);",
-      "done": false,
+      "done": true,
       "note": "SYNOPSIS\n       #include <string.h>\n\n       int memcmp(const void s1[.n], const void s2[.n], size_t n);\n\nDESCRIPTION\n       The memcmp() function compares the first n bytes (each in‐\n       terpreted as unsigned char) of the memory areas s1 and s2.\n\nRETURN VALUE\n       The  memcmp() function returns an integer less than, equal\n       to, or greater than zero if the first n  bytes  of  s1  is\n       found,  respectively,  to  be  less  than, to match, or be\n       greater than the first n bytes of s2.\n\n       For a nonzero return value, the sign is determined by  the\n       sign  of  the  difference  between the first pair of bytes\n       (interpreted as unsigned char) that differ in s1 and s2.\n\n       If n is zero, the return value is zero.",
       "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
       "createdAt": 1785422340754,
-      "updatedAt": 1785423313463,
+      "updatedAt": 1788080973830,
       "order": 18
     },
     {

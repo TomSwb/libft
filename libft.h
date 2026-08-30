@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 11:04:48 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/30 11:42:19 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,9 @@
 
 /***** Libraries *****/
 
+// macros
+# include <limits.h>
+# include <stdint.h>
 // read / write / close 
 # include <unistd.h> 
 // size_t
