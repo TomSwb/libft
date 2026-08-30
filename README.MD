@@ -128,9 +128,12 @@ fclean
 - `ft_memchr`:  Returns the address of the given 'int c' char if found in the given array.
 - `ft_memcmp`:  Returns the result of comparing the bytes value up to 'n' number of bytes.
 - `ft_memcpy`:  Returns a pointer to the given 'dest' array after copying 'n' bytes 
-values from 'src'.
-- `ft_memmove`:  ...
+values from 'src'. Does not account for overlap in memory.
+- `ft_memmove`:  Returns a pointer to the given 'dest' array after copyig 'n' len of bytes from 'src' in it, accounting that overlap does not affect the data unlike memcpy.
 - `ft_memset`:  Returns the given 's' array filled with the 'c' char up to 'n' bytes.
+
+- `ft_calloc`: ...
+- `ft_strdup`: ...
 
 ##### Part 2: Additional functions
 

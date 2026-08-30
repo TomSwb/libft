@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/29 17:12:42 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 11:07:57 by tomswb           ###   ########.fr       */
+/*   Created: 2026/08/30 11:04:35 by tomswb            #+#    #+#             */
+/*   Updated: 2026/08/30 11:08:06 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a pointer to the given 'dest' array after copying 'n' bytes 
-values from 'src'.
+Returns a pointer to the given 'dest' array after copyig
+'n' len of bytes from 'src' in it, ensuring overlap does not 
+affect the data contrarily to memcpy which does not account for it.
 
 * @param dest 
 * @param src 
@@ -23,18 +24,26 @@ values from 'src'.
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char		*u_dest;
-	const unsigned char	*u_src;
+	unsigned char		*u_src;
+	size_t				i;
 
 	u_dest = (unsigned char *)dest;
-	u_src = (const unsigned char *)src;
+	u_src = (unsigned char *)src;
+	if (n == 0)
+		return (dest);
+	i = 0;
 	while (n > 0)
 	{
-		*u_dest = *u_src;
-		u_dest++;
-		u_src++;
+		if (u_dest < u_src)
+		{
+			u_dest[i] = u_src[i];
+			i++;
+		}
+		else
+			u_dest[n - 1] = u_src[n - 1];
 		n--;
 	}
 	return (dest);
