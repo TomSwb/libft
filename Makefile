@@ -6,7 +6,7 @@
 #    By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tomswb            #+#    #+#              #
-#    Updated: 2026/08/30 16:23:04 by tomswb           ###   ########.fr        #
+#    Updated: 2026/08/30 20:46:03 by tomswb           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ SOURCES = ft_atoi.c \
 		ft_memmove.ft \
 		ft_memset.c \
 		ft_strchr.c \
+		ft_strdup.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
 		ft_strncmp.c \

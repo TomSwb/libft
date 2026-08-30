@@ -133,7 +133,8 @@ values from 'src'. Does not account for overlap in memory.
 - `ft_memset`:  Returns the given 's' array filled with the 'c' char up to 'n' bytes.
 
 - `ft_calloc`: Return an initialised 'malloced' array filled with 0 up to len 'n'.
-- `ft_strdup`: ...
+- `ft_strdup`: Returns an array with the og 's' string dupped in it (copied) but in the heap 
+instead of the stack, using malloc.
 
 ##### Part 2: Additional functions
 

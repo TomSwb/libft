@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 16:22:33 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/30 20:45:51 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n);
 void	*ft_memset(void *s, int c, size_t n);
 
 void	*ft_calloc(size_t n, size_t size);
-//TODO: char	*ft_strdup(const char *s);
+char	*ft_strdup(const char *s);
 
 /** Part 2 **/
 
