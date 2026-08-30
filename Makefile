@@ -6,7 +6,7 @@
 #    By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tomswb            #+#    #+#              #
-#    Updated: 2026/08/30 11:04:58 by tomswb           ###   ########.fr        #
+#    Updated: 2026/08/30 16:23:04 by tomswb           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,6 +14,7 @@ NAME = libft.a
 
 SOURCES = ft_atoi.c \
 		ft_bzero.c \
+		ft_calloc.c \
 		ft_isprint.c \
 		ft_isalnum.c \
 		ft_isalpha.c \

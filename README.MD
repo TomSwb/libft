@@ -132,7 +132,7 @@ values from 'src'. Does not account for overlap in memory.
 - `ft_memmove`:  Returns a pointer to the given 'dest' array after copyig 'n' len of bytes from 'src' in it, accounting that overlap does not affect the data unlike memcpy.
 - `ft_memset`:  Returns the given 's' array filled with the 'c' char up to 'n' bytes.
 
-- `ft_calloc`: ...
+- `ft_calloc`: Return an initialised 'malloced' array filled with 0 up to len 'n'.
 - `ft_strdup`: ...
 
 ##### Part 2: Additional functions
