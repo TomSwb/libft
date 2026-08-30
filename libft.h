@@ -6,15 +6,16 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 20:45:51 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/30 21:11:41 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
- * @brief
-	Header for complete libft library, defining all required libraries, functions
-	and struct.
- */
+* @brief
+Header for complete libft library, defining all required libraries, functions
+and struct.
+
+*/
 
 #ifndef LIBFT_H
 # define LIBFT_H
