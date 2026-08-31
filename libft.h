@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/31 15:58:14 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/31 17:02:25 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,10 +47,10 @@ int		ft_tolower(int c);
 int		ft_toupper(int c);
 
 char	*ft_strchr(const char *s, int c);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dsize);
 size_t	ft_strlen(const char *s);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-// could not test og function strnstr
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_strrchr(const char *s, int c);
 
@@ -66,18 +66,21 @@ char	*ft_strdup(const char *s);
 
 /** Part 2 **/
 
+//TODO: char  *ft_substr(char const *s, unsigned int start, size_t len);
+//TODO: char  *ft_strjoin(char const *s1, char const *s2);
+//TODO: char  *ft_strtrim(char const *s1, char const *set);
+//TODO: char  **ft_split(char const *s, char c);
+
 //TODO: char  *ft_itoa(int n);
 
+//TODO: char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+//TODO: void  ft_striteri(char *s, void (*f)(unsigned int, char*));
+
 //TODO: void  ft_putchar_fd(char c, int fd);
+//TODO: void  ft_putstr_fd(char *s, int fd);
 //TODO: void  ft_putendl_fd(char *s, int fd);
 //TODO: void  ft_putnbr_fd(int n, int fd);
-//TODO: void  ft_putstr_fd(char *s, int fd);
-  
-//TODO: char  **ft_split(char const *s, char c);
-//TODO: void  ft_striteri(char *s, void (*f)(unsigned int, char*));
-//TODO: char  *ft_strjoin(char const *s1, char const *s2);
-//TODO: char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-//TODO: char  *ft_strtrim(char const *s1, char const *set);
-//TODO: char  *ft_substr(char const *s, unsigned int start, size_t len);
+
+/** Part 3 **/
 
 #endif
