@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/31 16:08:56 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/31 17:13:32 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/31 17:16:12 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(void)
 {
 	char	dst[20] = "Hello";
 	const char	*src = "World";
-	size_t	size = 5;	
+	size_t	size = 15;	
 
 	printf("%s\n", dst);
 	printf("%zu\n", ft_strlcat(dst, src, size));
