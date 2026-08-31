@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/31 16:08:56 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/31 16:44:34 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/31 17:13:10 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 int	main(void)
 {
-	char	dst[] = "Hello";
-	char	src[] = "World";
+	char	dst[20] = "Hello";
+	char	*src = "World";
 	size_t	size = 5;	
 
 	printf("%s\n", dst);
