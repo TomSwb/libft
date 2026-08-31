@@ -2,220 +2,210 @@
   "schemaVersion": 1,
   "tasks": [
     {
-      "id": "d6948bd1-2bc3-45c2-8ec4-57925889e626",
-      "title": "int \tft_isalnum(int c);",
-      "done": true,
-      "note": " isalnum()\n              checks for  an  alphanumeric  character;  it  is\n              equivalent to (isalpha(c) || isdigit(c)).",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785420906364,
-      "updatedAt": 1785766607977,
+      "id": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "title": "libft part 2",
+      "done": false,
+      "createdAt": 1788183664276,
+      "updatedAt": 1788183664276,
       "order": 1
     },
     {
-      "id": "a1e66a95-372c-4eb4-92ca-eef3becd4b5e",
-      "title": "int\t\tft_tolower(int c);",
-      "done": true,
-      "note": "These functions convert lowercase letters to uppercase,\n       and vice versa.\n\n       If c is a lowercase letter, toupper() returns  its  up‐\n       percase  equivalent, if an uppercase representation ex‐\n       ists in the current locale.  Otherwise, it  returns  c.\n       The  toupper_l()  function  performs the same task, but\n       uses the locale referred to by the  locale  handle  lo‐\n       cale.\n\n       If c is an uppercase letter, tolower() returns its low‐\n       ercase equivalent, if a lowercase representation exists\n       in  the  current locale.  Otherwise, it returns c.  The\n       tolower_l() function performs the same task,  but  uses\n       the locale referred to by the locale handle locale.\n\n       If c is neither an unsigned char value nor EOF, the be‐\n       havior of these functions is undefined.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785420940054,
-      "updatedAt": 1785770743915,
-      "order": 5
+      "id": "d21f7789-329c-44a4-b95a-58019ab0a84e",
+      "title": "char  *ft_itoa(int n);",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 68,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: char  *ft_itoa(int n);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184710724,
+      "updatedAt": 1788184738436,
+      "order": 1
     },
     {
-      "id": "a8101b54-82c4-4472-9d3e-bad21d470885",
-      "title": "int\t\tft_toupper(int c);",
-      "done": true,
-      "note": "These functions convert lowercase letters to uppercase,\n       and vice versa.\n\n       If c is a lowercase letter, toupper() returns  its  up‐\n       percase  equivalent, if an uppercase representation ex‐\n       ists in the current locale.  Otherwise, it  returns  c.\n       The  toupper_l()  function  performs the same task, but\n       uses the locale referred to by the  locale  handle  lo‐\n       cale.\n\n       If c is an uppercase letter, tolower() returns its low‐\n       ercase equivalent, if a lowercase representation exists\n       in  the  current locale.  Otherwise, it returns c.  The\n       tolower_l() function performs the same task,  but  uses\n       the locale referred to by the locale handle locale.\n\n       If c is neither an unsigned char value nor EOF, the be‐\n       havior of these functions is undefined.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785420985355,
-      "updatedAt": 1785770460919,
-      "order": 4
-    },
-    {
-      "id": "9fd7a8a4-12c6-49e2-abb8-bfad7222a75c",
-      "title": "int \tft_isascii(int c);",
-      "done": true,
-      "note": " isascii()\n              checks whether c is a 7-bit unsigned char  value\n              that fits into the ASCII character set.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421028691,
-      "updatedAt": 1785769090630,
-      "order": 2
-    },
-    {
-      "id": "50b15e77-24ec-49cd-bde1-50803862bccb",
-      "title": "int \tft_isprint(int c);",
-      "done": true,
-      "note": "isprint()\n              checks for  any  printable  character  including\n              space.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421058638,
-      "updatedAt": 1785770080341,
+      "id": "1a2d0ddb-e3de-4162-80fa-86c1959e3845",
+      "title": "void  ft_putchar_fd(char c, int fd);",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 70,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: void  ft_putchar_fd(char c, int fd);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184744821,
+      "updatedAt": 1788184774222,
       "order": 3
     },
     {
-      "id": "6c28f118-0f67-4c6f-8f08-d473092531da",
-      "title": "size_t\tft_strlen(const char *s);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       size_t strlen(const char *s);\n\nDESCRIPTION\n       The  strlen() function calculates the length of the string pointed to\n       by s, excluding the terminating null byte ('\\0').\n\nRETURN VALUE\n       The strlen() function returns the  number  of  bytes  in  the  string\n       pointed to by s.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421075243,
-      "updatedAt": 1786544929526,
-      "order": 7
+      "id": "4be3c780-972c-4ad0-9c97-dd9861ed3983",
+      "title": "void  ft_putendl_fd(char *s, int fd);",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 71,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: void  ft_putendl_fd(char *s, int fd);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184748834,
+      "updatedAt": 1788184777869,
+      "order": 4
     },
     {
-      "id": "bb647cfe-da1b-4829-a57e-baaf4e1e100e",
-      "title": "size_t\tft_strlcpy(char dst[.dsize], const char *src);",
-      "done": true,
-      "note": " strlcpy(3bsd)\n       strlcat(3bsd)\n              Copy  and catenate the input string into a destina‐\n              tion string.  If the destination buffer, limited by\n              its size, isn't large enough to hold the copy,  the\n              resulting string is truncated (but it is guaranteed\n              to  be null-terminated).  They return the length of\n              the total string they tried to create.\n\n              Check BUGS before using these functions.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421113869,
-      "updatedAt": 1786548023194,
-      "order": 8
+      "id": "874ac624-c820-4ef7-a6ad-9561a50d50fa",
+      "title": "void  ft_putnbr_fd(int n, int fd);",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 72,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: void  ft_putnbr_fd(int n, int fd);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184750364,
+      "updatedAt": 1788184781930,
+      "order": 5
     },
     {
-      "id": "c9965aab-96d7-45bc-87cf-b08dcfde6fda",
-      "title": "void\t*ft_memset(void s[.n], int c, size_t n);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memset(void s[.n], int c, size_t n);\n\nDESCRIPTION\n       The  memset() function fills the first n bytes of the mem‐\n       ory area pointed to by s with the constant byte c.\n\nRETURN VALUE\n       The memset() function returns a pointer to the memory area\n       s.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421201779,
-      "updatedAt": 1788080967302,
-      "order": 11
-    },
-    {
-      "id": "70d91afc-cc3b-4b86-b03c-6a2995b3f5e4",
-      "title": "void\tft_bzero(void s[.n], size_t n);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <strings.h>\n\n       void bzero(void s[.n], size_t n);\n\n       #include <string.h>\n\n       void explicit_bzero(void s[.n], size_t n);\n\nDESCRIPTION\n       The bzero() function erases the data in the n bytes of the\n       memory  starting at the location pointed to by s, by writ‐\n       ing zeros (bytes containing '\\0') to that area.\n\n       The explicit_bzero() function performs the  same  task  as\n       bzero().   It  differs  from bzero() in that it guarantees\n       that compiler optimizations will not remove the erase  op‐\n       eration if the compiler deduces that the operation is \"un‐\n       necessary\".\n\nRETURN VALUE\n       None.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421208648,
-      "updatedAt": 1788080968192,
-      "order": 12
-    },
-    {
-      "id": "7831e586-50f4-411f-a765-a03ad75a08c1",
-      "title": "void\t*ft_memcpy(void dest[.n], const void src(.n), size_t n);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memcpy(void dest[restrict .n], const void src[restrict .n],\n                    size_t n);\n\nDESCRIPTION\n       The  memcpy() function copies n bytes from memory area src\n       to memory area dest.  The memory areas must  not  overlap.\n       Use memmove(3) if the memory areas do overlap.\n\nRETURN VALUE\n       The memcpy() function returns a pointer to dest.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421229948,
-      "updatedAt": 1788080969190,
-      "order": 13
-    },
-    {
-      "id": "eff2e297-ab65-42da-8f12-0a44cc11ebac",
-      "title": "void\t*ft_memmove(void dest[.n], const void src[.n], size_t n);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memmove(void dest[.n], const void src[.n], size_t n);\n\nDESCRIPTION\n       The memmove() function copies n bytes from memory area src\n       to  memory area dest.  The memory areas may overlap: copy‐\n       ing takes place as though  the  bytes  in  src  are  first\n       copied into a temporary array that does not overlap src or\n       dest, and the bytes are then copied from the temporary ar‐\n       ray to dest.\n\nRETURN VALUE\n       The memmove() function returns a pointer to dest.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421268185,
-      "updatedAt": 1788080969654,
-      "order": 14
-    },
-    {
-      "id": "fa60e800-194c-42c6-b890-a6a18824cf4f",
-      "title": "char\t*ft_strchr(const char *s, int c);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       char *strchr(const char *s, int c);\n\nDESCRIPTION\n       The  strchr()  function returns a pointer to the first oc‐\n       currence of the character c in the string s.\n\n       Here \"character\" means \"byte\"; these functions do not work\n       with wide or multibyte characters.\n\nRETURN VALUE\n       The strchr() and strrchr() functions return a  pointer  to\n       the  matched  character  or  NULL  if the character is not\n       found.  The terminating null byte is  considered  part  of\n       the string, so that if c is specified as '\\0', these func‐\n       tions return a pointer to the terminator.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421452552,
-      "updatedAt": 1787665899506,
-      "order": 23
-    },
-    {
-      "id": "5f47e998-5b3b-419a-b5be-bb2cbbe6138e",
-      "title": "char\t*ft_strrchr(const char *s, int c);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       char *strrchr(const char *s, int c);\n\nDESCRIPTION\n        The strrchr() function returns a pointer to the  last  oc‐\n       currence of the character c in the string s.\n\n       Here \"character\" means \"byte\"; these functions do not work\n       with wide or multibyte characters.\n\nRETURN VALUE\n       The strchr() and strrchr() functions return a  pointer  to\n       the  matched  character  or  NULL  if the character is not\n       found.  The terminating null byte is  considered  part  of\n       the string, so that if c is specified as '\\0', these func‐\n       tions return a pointer to the terminator.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421494920,
-      "updatedAt": 1787665903351,
-      "order": 15
-    },
-    {
-      "id": "bd003525-b612-4e0a-99e0-0c997a8e46e6",
-      "title": "int\t\tft_strncmp(const char s1[.n], const char s2[.n], size_t n);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       int strncmp(const char s1[.n], const char s2[.n], size_t n);\n\nDESCRIPTION\n       The  strcmp() function compares the two strings s1 and s2.\n       The locale is not taken into account (for  a  locale-aware\n       comparison, see strcoll(3)).  The comparison is done using\n       unsigned characters.\n\n       strcmp()  returns  an integer indicating the result of the\n       comparison, as follows:\n\n       •  0, if the s1 and s2 are equal;\n\n       •  a negative value if s1 is less than s2;\n\n       •  a positive value if s1 is greater than s2.\n\n       The strncmp() function is similar, except it compares only\n       the first (at most) n bytes of s1 and s2.\n\nRETURN VALUE\n       The strcmp() and strncmp()  functions  return  an  integer\n       less  than,  equal  to, or greater than zero if s1 (or the\n       first n bytes thereof) is found, respectively, to be  less\n       than, to match, or be greater than s2.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421767708,
-      "updatedAt": 1787668350427,
-      "order": 16
-    },
-    {
-      "id": "b05ae464-380a-4494-ab8b-d193c86cc303",
-      "title": "void\t*ft_memchr(const void s[.n], int c, size_t n);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       void *memchr(const void s[.n], int c, size_t n);\n\nDESCRIPTION\n       The memchr() function scans the initial  n  bytes  of  the\n       memory  area  pointed to by s for the first instance of c.\n       Both c and the bytes of the memory area pointed  to  by  s\n       are interpreted as unsigned char.\n\nRETURN VALUE\n       The  memchr()  and memrchr() functions return a pointer to\n       the matching byte or NULL if the character does not  occur\n       in the given memory area.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785421962673,
-      "updatedAt": 1788080971980,
-      "order": 17
-    },
-    {
-      "id": "d21141e4-b360-4242-8dff-48271c100074",
-      "title": "int\t\tft_memcmp(const void s1[.n], const void s2[.n], size_t n);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <string.h>\n\n       int memcmp(const void s1[.n], const void s2[.n], size_t n);\n\nDESCRIPTION\n       The memcmp() function compares the first n bytes (each in‐\n       terpreted as unsigned char) of the memory areas s1 and s2.\n\nRETURN VALUE\n       The  memcmp() function returns an integer less than, equal\n       to, or greater than zero if the first n  bytes  of  s1  is\n       found,  respectively,  to  be  less  than, to match, or be\n       greater than the first n bytes of s2.\n\n       For a nonzero return value, the sign is determined by  the\n       sign  of  the  difference  between the first pair of bytes\n       (interpreted as unsigned char) that differ in s1 and s2.\n\n       If n is zero, the return value is zero.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785422340754,
-      "updatedAt": 1788080973830,
-      "order": 18
-    },
-    {
-      "id": "7d7dbb07-c5f5-40bb-b5b3-af1f8bc71b7d",
-      "title": "int\t\tatoi(const char *nptr);",
-      "done": true,
-      "note": "SYNOPSIS\n       #include <stdlib.h>\n\n       int atoi(const char *nptr);\n\nDESCRIPTION\n       The atoi() function converts the initial  portion  of  the\n       string  pointed  to  by  nptr to int.  The behavior is the\n       same as\n\n           strtol(nptr, NULL, 10);\n\n       except that atoi() does not detect errors.\n\n       The atol()  and  atoll()  functions  behave  the  same  as\n       atoi(),  except  that  they convert the initial portion of\n       the string to their return type of long or long long.\n\nRETURN VALUE\n       The converted value or 0 on error.\n\n------------\nTo check if correct:\n\nSYNOPSIS\n       #include <stdlib.h>\n\n       long strtol(const char *restrict nptr,\n                   char **_Nullable restrict endptr, int base);\n       long long strtoll(const char *restrict nptr,\n                   char **_Nullable restrict endptr, int base);\n\n   Feature   Test   Macro   Requirements   for  glibc  (see  fea‐\n   ture_test_macros(7)):\n\n       strtoll():\n           _ISOC99_SOURCE\n               || /* glibc <= 2.19: */ _SVID_SOURCE || _BSD_SOURCE\n\nDESCRIPTION\n       The strtol() function converts the  initial  part  of  the\n       string  in  nptr  to a long integer value according to the\n       given base, which must be between 2 and 36  inclusive,  or\n       be the special value 0.\n\n       The  string  may  begin  with an arbitrary amount of white\n       space (as determined by isspace(3)) followed by  a  single\n       optional  '+'  or  '-'  sign.   If base is zero or 16, the\n       string may then include a \"0x\" or  \"0X\"  prefix,  and  the\n       number  will be read in base 16; otherwise, a zero base is\n       taken as 10 (decimal) unless the next character is '0', in\n       which case it is taken as 8 (octal).\n\n       The remainder of the string is converted to a  long  value\n       in  the  obvious  manner,  stopping at the first character\n       which is not a valid digit in the given base.   (In  bases\n       above  10, the letter 'A' in either uppercase or lowercase\n       represents 10, 'B' represents 11, and so forth,  with  'Z'\n       representing 35.)\n\n       If endptr is not NULL, and the base is supported, strtol()\n       stores  the  address  of  the  first  invalid character in\n       *endptr.  If there were no digits at all, strtol()  stores\n       the original value of nptr in *endptr (and returns 0).  In\n       particular,  if  *nptr is not '\\0' but **endptr is '\\0' on\n       return, the entire string is valid.\n\n       The strtoll() function works just like the strtol()  func‐\n       tion but returns a long long integer value.\n\nRETURN VALUE\n       The  strtol()  function  returns the result of the conver‐\n       sion, unless the value would underflow or overflow.  If an\n       underflow occurs, strtol() returns LONG_MIN.  If an  over‐\n       flow  occurs,  strtol()  returns LONG_MAX.  In both cases,\n       errno is set to ERANGE.  Precisely the same holds for str‐\n       toll() (with LLONG_MIN and LLONG_MAX instead  of  LONG_MIN\n       and LONG_MAX).\n",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785422536792,
-      "updatedAt": 1786431263165,
+      "id": "69ef9384-57a2-4260-a969-89c27adce6d4",
+      "title": "void  ft_putstr_fd(char *s, int fd);",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 73,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: void  ft_putstr_fd(char *s, int fd);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184754963,
+      "updatedAt": 1788184785111,
       "order": 6
     },
     {
-      "id": "204eaa38-1904-466f-bac1-ab4620a45405",
-      "title": "void\t*ft_calloc(size_t n, size_t size);",
+      "id": "b06c0bef-49e0-47cb-97ca-3ed0d9a0e41d",
+      "title": "char  **ft_split(char const *s, char c);",
       "done": false,
-      "note": "#include <stdlib.h>\n\ncalloc()\n       The  calloc()  function allocates memory for an array of n\n       elements of size bytes each and returns a pointer  to  the\n       allocated  memory.   The  memory  is set to zero.  If n or\n       size is 0, then calloc() returns a  unique  pointer  value\n       that can later be successfully passed to free().\n\n       If  the multiplication of n and size would result in inte‐\n       ger overflow, then calloc() returns  an  error.   By  con‐\n       trast,  an  integer  overflow would not be detected in the\n       following call to malloc(), with the result that an incor‐\n       rectly sized block of memory would be allocated:\n\n           malloc(n * size);\n\nRETURN VALUE\n       The  malloc(),  calloc(),  realloc(),  and  reallocarray()\n       functions  return a pointer to the allocated memory, which\n       is suitably aligned for any type that fits  into  the  re‐\n       quested  size  or  less.  On error, these functions return\n       NULL and set errno.   Attempting  to  allocate  more  than\n       PTRDIFF_MAX  bytes  is  considered  an error, as an object\n       that large could cause later pointer subtraction to  over‐\n       flow.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785422767001,
-      "updatedAt": 1785423325404,
-      "order": 19
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 75,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: char  **ft_split(char const *s, char c);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184756365,
+      "updatedAt": 1788184788028,
+      "order": 7
     },
     {
-      "id": "95ac94a5-4b37-41b9-bdb7-f94a449390e5",
-      "title": "char\t*ft_strdup(const char *s);",
+      "id": "f51f00f7-a9cc-43f7-b706-6ff5432d915a",
+      "title": "void  ft_striteri(char *s, void (*f)(unsigned int, char*));",
       "done": false,
-      "note": "#include <stdlib.h>\n\nDESCRIPTION\n       The strdup() function returns a pointer to  a  new  string\n       which  is a duplicate of the string s.  Memory for the new\n       string is obtained with malloc(3), and can be  freed  with\n       free(3).\n\nRETURN VALUE\n       On success, the strdup() function returns a pointer to the\n       duplicated string.  It returns NULL if insufficient memory\n       was available, with errno set to indicate the error.\n\ndo i need that? ->\nERRORS\n       ENOMEM Insufficient memory available to allocate duplicate\n              string.",
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785422917693,
-      "updatedAt": 1785423186088,
-      "order": 20
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 76,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: void  ft_striteri(char *s, void (*f)(unsigned int, char*));"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184757888,
+      "updatedAt": 1788184791396,
+      "order": 8
     },
     {
-      "id": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "title": "libft part 1",
+      "id": "bfdaee33-8d3b-4a4c-ba0a-2ae5d57bef6e",
+      "title": "char  *ft_strjoin(char const *s1, char const *s2);",
       "done": false,
-      "createdAt": 1785423175240,
-      "updatedAt": 1785423175240,
-      "order": 1
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 77,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: char  *ft_strjoin(char const *s1, char const *s2);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184760504,
+      "updatedAt": 1788184795431,
+      "order": 9
     },
     {
-      "id": "ea789088-1d8e-4d48-a100-f362fda9c73c",
-      "title": "int ft_isalpha",
-      "done": true,
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785427368895,
-      "updatedAt": 1785427379643,
-      "order": 21
+      "id": "29543434-c33a-4d43-bb53-b2d07bad0258",
+      "title": "char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 78,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184761494,
+      "updatedAt": 1788184798482,
+      "order": 10
     },
     {
-      "id": "14bb7b15-ee8c-409d-ad55-01ce076135c2",
-      "title": "int ft_isdigit",
-      "done": true,
-      "parentId": "d5538a7a-8caa-402b-b423-2d319f64e287",
-      "createdAt": 1785427377439,
-      "updatedAt": 1785427380564,
-      "order": 22
+      "id": "a0897092-6d37-4e28-89d5-7a94697dbc5f",
+      "title": "char  *ft_strtrim(char const *s1, char const *set);",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 79,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: char  *ft_strtrim(char const *s1, char const *set);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184762312,
+      "updatedAt": 1788184801741,
+      "order": 11
+    },
+    {
+      "id": "5120b232-f182-441c-a4a4-53d7ffe8f553",
+      "title": "char  *ft_substr(char const *s, unsigned int start, size_t len);",
+      "done": false,
+      "links": [
+        {
+          "uri": "file:///home/tomswb/Desktop/libft/libft.h",
+          "line": 80,
+          "column": 2,
+          "tag": "TODO",
+          "preview": "//TODO: char  *ft_substr(char const *s, unsigned int start, size_t len);"
+        }
+      ],
+      "parentId": "921e574d-c268-4c37-9563-64b4abdec50c",
+      "createdAt": 1788184763392,
+      "updatedAt": 1788184770413,
+      "order": 2
     }
   ]
 }

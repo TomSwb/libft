@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 21:11:41 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/08/31 15:58:14 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,19 @@ void	*ft_calloc(size_t n, size_t size);
 char	*ft_strdup(const char *s);
 
 /** Part 2 **/
+
+//TODO: char  *ft_itoa(int n);
+
+//TODO: void  ft_putchar_fd(char c, int fd);
+//TODO: void  ft_putendl_fd(char *s, int fd);
+//TODO: void  ft_putnbr_fd(int n, int fd);
+//TODO: void  ft_putstr_fd(char *s, int fd);
+  
+//TODO: char  **ft_split(char const *s, char c);
+//TODO: void  ft_striteri(char *s, void (*f)(unsigned int, char*));
+//TODO: char  *ft_strjoin(char const *s1, char const *s2);
+//TODO: char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+//TODO: char  *ft_strtrim(char const *s1, char const *set);
+//TODO: char  *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif
