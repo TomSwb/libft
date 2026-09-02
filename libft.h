@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/02 16:39:31 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/02 16:54:21 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,8 +66,8 @@ char	*ft_strdup(const char *s);
 
 /** Part 2 **/
 
-char  *ft_substr(char const *s, unsigned int start, size_t len);
-char  *ft_strjoin(char const *s1, char const *s2);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
 //TODO: char  *ft_strtrim(char const *s1, char const *set);
 //TODO: char  **ft_split(char const *s, char c);
 

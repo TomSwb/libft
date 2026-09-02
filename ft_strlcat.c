@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/31 16:08:56 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/02 13:10:38 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/02 16:54:36 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	len_src;
 
 	i_src = 0;
-	while (src[i_src]) 
+	while (src[i_src])
 		i_src++;
 	len_src = i_src;
 	i_dest = 0;
