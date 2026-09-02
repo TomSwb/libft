@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 17:14:09 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/25 15:38:38 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/02 16:14:42 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Copy src into dest and return the len of the wanted result (len of src)
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
+size_t ft_strlcpy(char *dest, const char *src, size_t dsize)
 {
 	size_t	result;
 	size_t	len;
@@ -30,12 +30,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dsize)
 	result = 0;
 	while (src[result])
 		result++;
+	if (dsize == 0)
+		return (result);
 	len = 0;
-	while (len < dsize)
+	while (len < dsize - 1 && src[len])
 	{
-		dst[len] = src[len];
+		dest[len] = src[len];
 		len++;
 	}
-	dst[len] = '\0';
+	dest[len] = '\0';
 	return (result);
 }

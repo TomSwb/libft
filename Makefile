@@ -6,7 +6,7 @@
 #    By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tomswb            #+#    #+#              #
-#    Updated: 2026/08/31 16:58:47 by tomswb           ###   ########.fr        #
+#    Updated: 2026/09/02 16:40:28 by tomswb           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,12 +27,14 @@ SOURCES = ft_atoi.c \
 		ft_memset.c \
 		ft_strchr.c \
 		ft_strdup.c \
+		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
 		ft_strncmp.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
+		ft_substr.c \
 		ft_tolower.c \
 		ft_toupper.c 
 

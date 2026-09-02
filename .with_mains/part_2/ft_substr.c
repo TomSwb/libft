@@ -10,9 +10,12 @@ int	main(void)
 	const char	s[] = "Hello World";
 	unsigned int	start = 6;
 	size_t	len = 5;
+	char	*result;
 
-	printf("s = %s\n", s);
-	printf("result = %s", ft_substr(s, start, len));
+	result = ft_substr(s, start, len);
+	printf("s = '%s', start = %d, len = %zu\n", s, start, len);
+	printf("result = '%s'", result);
+	free(result);
 }
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
@@ -43,10 +46,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 
 size_t	ft_strlen(const char *s)
 {
-	size_t	i;
+	size_t	len;
 
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
 }

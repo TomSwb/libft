@@ -6,6 +6,7 @@
 char  *ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlen(char const *s);
 size_t ft_strlcpy(char *dest, const char *src, size_t dsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 
 int	main(void)
 {
@@ -14,8 +15,8 @@ int	main(void)
 	char	*result;
 
 	result = ft_strjoin(s1, s2);
-	printf("s1 = %s, s2 = %s\n", s1, s2);
-	printf("result = %s", result);
+	printf("s1 = '%s', s2 = '%s'\n", s1, s2);
+	printf("result = '%s'", result);
 	free(result);
 }
 
@@ -25,7 +26,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	s_s1;
 	size_t	s_s2;
 	size_t	size;
-//	size_t	i;
 
 	if (!s1 || !s2)
 		return (NULL);
@@ -35,21 +35,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result = malloc(size);
 	if (!result)
 		return (NULL);
-	ft_strlcpy(result, s1, s_s1);
-	// i = 0;
-	// while (s1[i])
-	// {
-	// 	result[i] = s1[i];
-	// 	i++;
-	// }
-	ft_strlcat();
-	// i = 0;
-	// while (s2[i])
-	// {
-	// 	result[s_s1 + i] = s2[i];
-	// 	i++;
-	// }
-	result[size] = '\0';
+	ft_strlcpy(result, s1, size);
+	ft_strlcat(result, s2, size);
 	return (result);
 }
 
@@ -71,12 +58,39 @@ size_t ft_strlcpy(char *dest, const char *src, size_t dsize)
 	result = 0;
 	while (src[result])
 		result++;
+	if (dsize == 0)
+		return (result);
 	len = 0;
-	while (len < dsize)
+	while (len < dsize - 1 && src[len])
 	{
 		dest[len] = src[len];
 		len++;
 	}
 	dest[len] = '\0';
 	return (result);
+}
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{
+	size_t	i_dest;
+	size_t	i_src;
+	size_t	len_src;
+
+	i_src = 0;
+	while (src[i_src]) 
+		i_src++;
+	len_src = i_src;
+	i_dest = 0;
+	while (i_dest < size && dst[i_dest])
+		i_dest++;
+	if (i_dest == size)
+		return (size + i_src);
+	i_src = 0;
+	while (i_src < (size - 1) - i_dest && src[i_src])
+	{
+		dst[i_dest + i_src] = src[i_src];
+		i_src++;
+	}
+	dst[i_dest + i_src] = '\0';
+	return (i_dest + len_src);
 }
