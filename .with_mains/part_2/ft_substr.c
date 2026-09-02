@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 char  *ft_substr(char const *s, unsigned int start, size_t len);
+size_t	ft_strlen(const char *s);
 
 int	main(void)
 {
@@ -20,24 +21,32 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 	size_t	s_s;
 
+	if (!s)
+		return (NULL);
 	s_s = ft_strlen(s);
-	if (s_s <= start)
-	{
-		result = malloc(1);
-		if (!result)
-			return (NULL);
-		result[0] = '\0';
-		return (result);
-	}
+	if (start >= s_s)
+		len = 0;
+	else if (len > s_s - start)
+		len = s_s - start;
 	result = malloc(len + 1);
 	if (!result)
 		return (NULL);
 	i = 0;
-	while (i < len && s[start + i] != '\0')
+	while (i < len)
 	{
 		result[i] = s[start + i];
 		i++;
 	}
 	result[i] = '\0';
 	return (result);
+}
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
