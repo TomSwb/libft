@@ -14,7 +14,7 @@ int	main(void)
 	printf("result = %s", ft_substr(s, start, len));
 }
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*result;
 	size_t	i;
