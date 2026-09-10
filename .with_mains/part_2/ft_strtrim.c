@@ -42,13 +42,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = (end - start) + 1;
 	return (ft_substr(s1, start, len));
 }
-
-/*	if (!result)
-		return (NULL);
-	while (start <= end)
-	{
-		result[start] = s1[start];
-		start++;
-	}
-	result[start] = '\0';
-*/
