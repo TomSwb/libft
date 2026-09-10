@@ -32,12 +32,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!set)
 		return (ft_strdup(s1));
 	start = 0;
-	while (ft_strchr(set, s1[start]) != NULL && s1[start])
+	while (s1[start] && ft_strchr(set, s1[start]) != NULL)
 		start++;
 	if (s1[start] == '\0')
 		return (ft_strdup(s1 + start));
 	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[end]) != NULL && end > start)
+	while (end > start && ft_strchr(set, s1[end]) != NULL)
 		end--;
 	len = (end - start) + 1;
 	return (ft_substr(s1, start, len));
