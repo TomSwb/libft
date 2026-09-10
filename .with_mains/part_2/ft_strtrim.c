@@ -7,6 +7,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strchr(char const *s, int c);
 size_t	ft_strlen(char const *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char *ft_strdup(char *s);
 
 int	main(void)
 {
@@ -35,8 +36,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1) - 1;
 	while (ft_strchr(set, s1[end]) != NULL && end > start)
 			end--;
-	if (s1[0] == '\0' || end == start)
-		result = ft_strdup(result, s1);
+	if (s1[0] == '\0' || end == start || s1[start] == '\0')
+		result = ft_strdup(s1);
 	else
 	{
 		len = end - start;
