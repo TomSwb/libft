@@ -30,6 +30,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	start = 0;
 	while (ft_strchr(set, s1[start]) != NULL && s1[start])
 		start++;
+	if (s1[start] == '\0')
+		return (NULL);
 	end = ft_strlen(s1) - 1;
 	while (ft_strchr(set, s1[end]) != NULL && end > 0)
 			end--;
