@@ -29,16 +29,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	if (!s1)
 		return (NULL);
-	if (s1[0] == '\0')
-		return (ft_strdup(result, s1));
 	start = 0;
 	while (ft_strchr(set, s1[start]) != NULL && s1[start])
 		start++;
 	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[end]) != NULL && end > 0)
+	while (ft_strchr(set, s1[end]) != NULL && end > start)
 			end--;
-	len = end - start;
-	result = ft_substr(s1, start, len)
+	if (s1[0] == '\0' || end == start)
+		result = ft_strdup(result, s1);
+	else
+	{
+		len = end - start;
+		result = ft_substr(s1, start, len)
+	}
 	return (result);
 }
 
