@@ -28,10 +28,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1)
 		return (NULL);
 	start = 0;
-	while (ft_strchr(set, s1[start]) != NULL)
+	while (ft_strchr(set, s1[start]) != NULL && s1[start])
 		start++;
 	end = ft_strlen(s1) - 1;
-	while (ft_strchr(set, s1[end]) != NULL && *set)
+	while (ft_strchr(set, s1[end]) != NULL && end > 0)
 			end--;
 	result = malloc(end - start + 1);
 	if (!result)
