@@ -6,6 +6,7 @@
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strchr(char const *s, int c);
 size_t	ft_strlen(char const *s);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 int	main(void)
 {
@@ -24,6 +25,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*result;
 	size_t	end;
 	size_t	start;
+	size_t	len;
 
 	if (!s1 || s1[0] == '\0')
 		return (NULL);
@@ -33,8 +35,12 @@ char	*ft_strtrim(char const *s1, char const *set)
 	end = ft_strlen(s1) - 1;
 	while (ft_strchr(set, s1[end]) != NULL && end > 0)
 			end--;
-	result = malloc(end - start + 1);
-	if (!result)
+	len = end - start;
+	result = ft_substr(s1, start, len)
+	return (result);
+}
+
+/*	if (!result)
 		return (NULL);
 	while (start <= end)
 	{
@@ -42,5 +48,4 @@ char	*ft_strtrim(char const *s1, char const *set)
 		start++;
 	}
 	result[start] = '\0';
-	return (result);
-}
+*/
