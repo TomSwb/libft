@@ -23,27 +23,24 @@ int	main(void)
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*result;
 	size_t	end;
 	size_t	start;
 	size_t	len;
 
 	if (!s1)
 		return (NULL);
+	if (!set)
+		return (ft_strdup(s1));
 	start = 0;
 	while (ft_strchr(set, s1[start]) != NULL && s1[start])
 		start++;
+	if (s1[start] == '\0')
+		return (ft_strdup(s1 + start));
 	end = ft_strlen(s1) - 1;
 	while (ft_strchr(set, s1[end]) != NULL && end > start)
-			end--;
-	if (s1[0] == '\0' || end == start || s1[start] == '\0')
-		result = ft_strdup(s1);
-	else
-	{
-		len = end - start;
-		result = ft_substr(s1, start, len)
-	}
-	return (result);
+		end--;
+	len = (end - start) + 1;
+	return (ft_substr(s1, start, len));
 }
 
 /*	if (!result)
