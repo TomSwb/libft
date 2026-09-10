@@ -6,8 +6,8 @@
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strchr(char const *s, int c);
 size_t	ft_strlen(char const *s);
+char *ft_strdup(char const *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-char *ft_strdup(char *s);
 
 int	main(void)
 {
