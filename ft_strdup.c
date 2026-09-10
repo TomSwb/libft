@@ -22,9 +22,9 @@ instead of the stack, using malloc.
 */
 char	*ft_strdup(const char *s)
 {
-	int		len;
+	size_t	len;
 	char	*dest;
-	int		i;
+	size_t	i;
 
 	len = 0;
 	while (s[len])
