@@ -27,8 +27,10 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	len;
 
-	if (!s1 || s1[0] == '\0')
+	if (!s1)
 		return (NULL);
+	if (s1[0] == '\0')
+		return (ft_strdup(result, s1));
 	start = 0;
 	while (ft_strchr(set, s1[start]) != NULL && s1[start])
 		start++;
