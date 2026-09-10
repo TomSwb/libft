@@ -25,6 +25,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	start;
 
+	if (!s1)
+		return (NULL);
 	start = 0;
 	while (ft_strchr(set, s1[start]) != NULL)
 		start++;
