@@ -38,15 +38,6 @@ int  main(void)
 char  **ft_split(char const *s, char c)
 {
     char **result;
-    size_t count;
-    size_t i;
     
-    i = 0;
-    while (s[i])
-    {
-        if (s[i] == c)
-            count++;
-        i++;
-    }
-    
+      
 }
