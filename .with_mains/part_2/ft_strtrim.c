@@ -11,8 +11,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 int	main(void)
 {
+	
+	//test 1
 	char const	s1[25] = "Hello World How are you?";
 	char const	set[7] = "eolHau";
+	//test 2
+	
+	
+	
 	char	*result;
 
 	result = ft_strtrim(s1, set);
