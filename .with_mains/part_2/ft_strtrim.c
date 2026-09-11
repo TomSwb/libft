@@ -13,10 +13,20 @@ int	main(void)
 {
 	
 	//test 1
-	char const	s1[25] = "Hello World How are you?";
-	char const	set[7] = "eolHau";
+	char const	s1[6] = "Hello";
+	char const	set[3] = "Ho";
 	//test 2
-	
+	//char const	s1[1] = "";
+	//char const	set[3] = "Ho";
+	//test 3
+	//char const	s1[6] = "Hello";
+	//char const	set[1] = "";
+	//test 4
+	//char const	s1[6] = "Hello";
+	//char const	set[2] = "o";
+	//test 5
+	//char const	s1[6] = "Hello";
+	//char const	set[2] = "H";
 	
 	
 	char	*result;
