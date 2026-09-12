@@ -6,6 +6,7 @@
 
 char  **ft_split(char const *s, char c);
 static size_t ft_word_count(char const *s, char c);
+void *ft_calloc(size_t len, size_t size);
 static char *ft_extract_words(char const *s, char c, size_t *ptr);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 size_t ft_strlen(char const *s);
