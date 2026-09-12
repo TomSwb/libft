@@ -110,9 +110,22 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
     
     if (!s)
         return (NULL);
+    if (len <= 0)
+        return (NULL);
     s_s = ft_strlen(s);
     if (len >= s_s)
         len = s_s - start;
+    result = malloc(len + 1);
+    if (!result)
+        return (NULL);
+    i = 0;
+    while (i < len)
+    {
+        result[i] = s[start + i];
+        i++;
+    }
+    result[i] = '\0';
+    return (result);
 }
 
 size_t ft_strlen(char const *s)
