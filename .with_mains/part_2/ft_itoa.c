@@ -5,6 +5,7 @@
 #include <limits.h>
 
 char  *ft_itoa(int n);
+int ft_int_len(long long num);
 
 int main(void)
 {
@@ -30,22 +31,45 @@ char  *ft_itoa(int n)
     char *result;
     size_t len;
     size_t i;
+    size_t sign;
+    long long num;
     
+    num = n;
+    len = ft_int_len(num);
     result = malloc(len + 1);
     if (!result)
         return (NULL);
-    i = 0;
-    if (n < 0)
+    sign = 0;
+    if (num < 0)
     {
-        result[i] = '-';
-        i++;
+        num = -num
+        result[0] = '-';
+        sign = 1;
+    }
+    i = len - 1;
+    while (i >= sign)
+    {
+        result[i--] = num % 10 + 48;
+        num = num / 10;
     }
     result[len + 1] = '\0';
-    while (len > i)
-    {
-        result[len] = n % 10 + 48;
-        n = n / 10;
-        len--;
-    }
     return (result);
+}
+
+int ft_int_len(long long num)
+{
+    int count;
+    
+    count = 0;
+    if (num <= 0)
+    {
+        count++;
+        num = -num;
+    }
+    while (num > 0)
+    {
+        count++;
+        num /= 10;
+    }
+    return (count);
 }
