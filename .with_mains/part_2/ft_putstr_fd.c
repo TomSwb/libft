@@ -17,7 +17,7 @@ int main(int ac, char **av)
     if (fd == -1)
         return (-1);
     s = av[2];
-    ft_putchar_fd(s, fd);
+    ft_putstr_fd(s, fd);
     close(fd);
 }
 
