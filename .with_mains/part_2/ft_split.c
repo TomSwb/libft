@@ -87,19 +87,18 @@ static size_t ft_word_count(char const *s, char c)
     return (word_count);
 }
 
-static char *ft_extract_words(char const *s, char c, size_t *pos)
+static char *ft_extract_words(char const *s, char c, size_t *ptr)
 {
     unsigned int start_pos;
     size_t len;
     
-    while (s[pos] && s[pos] == c)
-        pos++;
-    start_pos = pos;
-    len = 0;
-    while (s[pos] && s[pos] != c)
-        pos++;
-    len = pos - start_pos - 1;
-    return (ft_substr(s, strat_pos, len));
+    while (s[*ptr] && s[*ptr] == c)
+        (*ptr)++;
+    start_pos = *ptr;
+    while (s[*ptr] && s[*ptr] != c)
+        (*ptr)++;
+    len = *ptr - start_pos;
+    return (ft_substr(s, start_pos, len));
 }
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
