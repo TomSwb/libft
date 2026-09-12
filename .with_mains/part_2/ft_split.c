@@ -103,7 +103,25 @@ static char *ft_extract_words(char const *s, char c, size_t *ptr)
 
 char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    ...
+    char *result;
+    size_t i;
+    size_t s_s;
+    
+    if (!s)
+        return (NULL);
+    s_s = ft_strlen(s);
+    if (len >= s_s)
+        len = s_s - start;
+}
+
+size_t ft_strlen(char const *s)
+{
+    size_t len;
+    
+    len = 0;
+    while (s[len])
+        len++;
+    return (len);
 }
 
 static void ft_free_ptr_arr(char **tab)
