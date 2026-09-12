@@ -49,5 +49,10 @@ size_t ft_strlen(chat const *s)
 
 char ft_toupper(unsigned int i, char c)
 {
+    (void)i;
+    char up_c;
     
+    if (c >= 97 && c <= 122)
+        up_c = c + 32;
+    return (up_c);
 }
