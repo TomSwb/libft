@@ -4,7 +4,7 @@
 #include <stddef.h>
 
 void  ft_putnbr_fd(int n, int fd);
-size_t ft_strlen(char const *s);
+void ft_putchar_fd(char c, int fd);
 
 int main(int ac, char **av)
 {
@@ -21,15 +21,15 @@ int main(int ac, char **av)
     close(fd);
 }
 
-void  ft_putnbr_fd(int n, int fd);
+void  ft_putnbr_fd(int n, int fd)
 {
     long num;
     
     num = n;
     if (num < 0)
     {
-        ft_putchar_fd('-');
-        numm = -num;
+        ft_putchar_fd('-', fd);
+        num = -num;
     }
     if (num >= 10)
         ft_putnbr_fd(num / 10, fd);
@@ -37,7 +37,7 @@ void  ft_putnbr_fd(int n, int fd);
     ft_putchar_fd(num + 48, fd);
 }
 
-size_t ft_putchar_fd(char c, int fd)
+void ft_putchar_fd(char c, int fd)
 {
     write(fd, &c, 1);
 }
