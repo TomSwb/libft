@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stddef.h>
+#include <stdint.h>
 
 char  **ft_split(char const *s, char c);
 static size_t ft_word_count(char const *s, char c);
@@ -91,14 +92,22 @@ static size_t ft_word_count(char const *s, char c)
 
 void *ft_calloc(size_t n, size_t size)
 {
-    char *result;
+    unsigned char *result;
+    void *empty;
     size_t i;
     
+    if (n == 0 || size == 0)
+    {
+        empty = malloc(0);
+        return (empty);
+    }
+    if (n > SIZE_MAX / size)
+        return (NULL);
     result = malloc(n * size);
     if (!result)
         return (NULL);
     i = 0;
-    while (result[i])
+    while (i < (n * size))
     {
         result[i] = '\0';
         i++;
