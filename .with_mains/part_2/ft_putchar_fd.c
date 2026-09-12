@@ -12,6 +12,8 @@ int main(int ac, char **av)
     if (ac != 2)
         return (-1);
     fd = open(av[1], O_WRONLY);
+    if (fd == -1)
+        return (-1);
     c = 'c';
     ft_putchar_fd(c, fd);
     close(fd);
