@@ -3,13 +3,13 @@
 #include <stdlib.h>
 
 char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));
-size_t ft_strlen(chat const *s);
+size_t ft_strlen(char const *s);
 char ft_toupper(unsigned int i, char c);
 
 int main(void)
 {
     char const s[6] = "hello";
-    char const *result;
+    char *result;
     
     printf("s = %s\n", s);
     result = ft_strmapi(s, ft_toupper);
