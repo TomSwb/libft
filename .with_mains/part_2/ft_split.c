@@ -6,7 +6,7 @@
 
 char  **ft_split(char const *s, char c);
 static size_t ft_word_count(char const *s, char c);
-void *ft_calloc(size_t len, size_t size);
+void *ft_calloc(size_t n, size_t size);
 static char *ft_extract_words(char const *s, char c, size_t *ptr);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 size_t ft_strlen(char const *s);
@@ -87,6 +87,23 @@ static size_t ft_word_count(char const *s, char c)
         i++;
     }
     return (word_count);
+}
+
+void *ft_calloc(size_t n, size_t size)
+{
+    char *result;
+    size_t i;
+    
+    result = malloc(n * size);
+    if (!result)
+        return (NULL);
+    i = 0;
+    while (result[i])
+    {
+        result[i] = '\0';
+        i++;
+    }
+    return (result);
 }
 
 static char *ft_extract_words(char const *s, char c, size_t *ptr)
