@@ -6,6 +6,9 @@
 
 char  **ft_split(char const *s, char c);
 static size_t ft_word_count(char const *s, char c);
+static char *ft_extract_words(char const *s, char c, size_t *pos);
+char *ft_substr(char *s, unsigned int start, size_t len);
+static void ft_free_ptr_arr(char **tab);
 
 int  main(void)
 {
@@ -17,6 +20,8 @@ int  main(void)
     
     printf("og s = %s\n", s);
     result = ft_split(s, c);
+    if (!result)
+        return (-1);
     i = 0;
     while (result[i] != NULL)
     {
@@ -28,26 +33,34 @@ int  main(void)
         }
         i++;
     }
-    i = 0;
-    while (result[i] != NULL)
-    {
-        free(result[i]);
-        i++;
-    }
-    free(result);
+    ft_free_ptr_arr(result);
 }
 
 char  **ft_split(char const *s, char c)
 {
     char **result;
+    size_t word_count;
     size_t i;
+    size_t pos;
     
     if (!s)
         return (NULL);
-    result = ft_calloc(ft_word_count(s, c) + 1, sizeof(char *));
+    word_count = ft_word_count(s, c);
+    result = ft_calloc(word_count + 1, sizeof(char *));
     if (!result)
         return (NULL);
-    result = ft_extract_words(s, c);
+    i = 0;
+    pos = 0;
+    while (i < word_count)
+    {
+        result[i] = ft_extract_words(s, c, &pos);
+        if (!result[i])
+        {
+            ft_free_ptr_arr(result);
+            return (NULL);
+        }
+        i++;
+    }
     return (result);
 }
 
@@ -74,7 +87,25 @@ static size_t ft_word_count(char const *s, char c)
     return (word_count);
 }
 
-static char **ft_extract_words(char const *s, char c)
+static char *ft_extract_words(char const *s, char c, size_t *pos)
 {
     ...
+}
+
+char *ft_substr(char *s, unsigned int start, size_t len)
+{
+    ...
+}
+
+static void ft_free_ptr_arr(char **tab)
+{
+    size_t i;
+    
+    i = 0;
+    while (tab[i] != NULL)
+    {
+        free(tab[i]);
+        i++;
+    }
+    free(tab);
 }
