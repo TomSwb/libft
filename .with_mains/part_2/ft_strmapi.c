@@ -4,7 +4,7 @@
 
 char  *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 size_t ft_strlen(char const *s);
-char ft_toupper(unsigned int i, char c);
+char ft_toupper_even(unsigned int i, char c);
 
 int main(void)
 {
@@ -12,7 +12,7 @@ int main(void)
     char *result;
     
     printf("s = %s\n", s);
-    result = ft_strmapi(s, ft_toupper);
+    result = ft_strmapi(s, ft_toupper_even);
     printf("result = %s\n", result);
     free(result);
 }
@@ -21,7 +21,7 @@ char  *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
     size_t len;
     char *result;
-    size_t i;
+    unsigned int i;
     
     len = ft_strlen(s);
     result = malloc(len + 1);
@@ -47,10 +47,9 @@ size_t ft_strlen(chat const *s)
     return (len);
 }
 
-char ft_toupper(unsigned int i, char c)
+char ft_toupper_even(unsigned int i, char c)
 {
-    (void)i;
-    if (c >= 'a' && c <= 'z')
+    if (c >= 'a' && c <= 'z' && i % 2 == 0)
         return (c - 32);
     return (c);
 }
