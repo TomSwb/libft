@@ -15,8 +15,27 @@ static void ft_free_ptr_arr(char **tab);
 
 int  main(void)
 {
-    char const s[] = "hello,world,!,how,you,doing";
-    char c = ",";
+    //test 1
+    char const s[14] = "hello,world,!";
+    //test 2
+    // char const s[1] = "";
+    //test 3
+    // char const s[4] = ",,,";
+    //test 4
+    // char const s[6] = "hello";
+    //test 5
+    // char const s[7] = ",hello";
+    //test 6
+    // char const s[7] = "hello,";
+    //test 7
+    // char const s[14] = "hello,,,world";
+    //test 8
+    // char const s[20] = ",,,hello,,,world,,,";
+    //test 9
+    // char const s[6] = "hello";
+    // char c = 0;
+    
+    char c = ',';
     char **result;
     int i;
     int j;
@@ -34,6 +53,7 @@ int  main(void)
             write(1, &result[i][j], 1);
             j++;
         }
+        write(1, "\n", 1);
         i++;
     }
     ft_free_ptr_arr(result);
