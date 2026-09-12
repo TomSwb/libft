@@ -5,7 +5,7 @@
 #include <limits.h>
 
 char  *ft_itoa(int n);
-static int ft_intlen(long num);
+static size_t ft_intlen(long num);
 
 int main(void)
 {
@@ -56,9 +56,9 @@ char  *ft_itoa(int n)
     return (result);
 }
 
-static int ft_intlen(long num)
+static size_t ft_intlen(long num)
 {
-    int count;
+    size_t count;
     
     count = 0;
     if (num <= 0)
