@@ -32,7 +32,7 @@ void  ft_putnbr_fd(int n, int fd);
         numm = -num;
     }
     if (num >= 10)
-        num = ft_putnbr_fd(num / 10, fd);
+        ft_putnbr_fd(num / 10, fd);
     num = num % 10;
     ft_putchar_fd(num + 48, fd);
 }
