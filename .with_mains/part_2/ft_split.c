@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 char  **ft_split(char const *s, char c);
+static size_t ft_word_count(char const *s, char c);
 
 int  main(void)
 {
@@ -39,5 +40,32 @@ char  **ft_split(char const *s, char c)
 {
     char **result;
     
-      
+    if (!s)
+        return (NULL);
+    result = ft_calloc(ft_word_count(s, c) + 1, sizeof(char *));
+    if (!result)
+        return (NULL);
+}
+
+static size_t ft_word_count(char const *s, char c)
+{
+    size_t flag;
+    size_t word_count;
+    size_t i;
+    
+    flag = 1;
+    word_count = 0;
+    i = 0;
+    while (s[i])
+    {
+        if (s[i] != c && flag == 1)
+        {
+            flag = 0;
+            word_count++;
+        }
+        else if (s[i] == c && flag == 0)
+            flag = 1;
+        i++;
+    }
+    return (word_count);
 }
