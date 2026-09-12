@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 char  **ft_split(char const *s, char c);
 static size_t ft_word_count(char const *s, char c);
@@ -39,12 +40,15 @@ int  main(void)
 char  **ft_split(char const *s, char c)
 {
     char **result;
+    size_t i;
     
     if (!s)
         return (NULL);
     result = ft_calloc(ft_word_count(s, c) + 1, sizeof(char *));
     if (!result)
         return (NULL);
+    result = ft_extract_words(s, c);
+    return (result);
 }
 
 static size_t ft_word_count(char const *s, char c)
@@ -68,4 +72,9 @@ static size_t ft_word_count(char const *s, char c)
         i++;
     }
     return (word_count);
+}
+
+static char **ft_extract_words(char const *s, char c)
+{
+    ...
 }
