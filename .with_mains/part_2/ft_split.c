@@ -109,7 +109,7 @@ void *ft_calloc(size_t n, size_t size)
     i = 0;
     while (i < (n * size))
     {
-        result[i] = '\0';
+        result[i] = 0;
         i++;
     }
     return (result);
