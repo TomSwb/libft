@@ -1,6 +1,6 @@
 
 #include <unistd.h>
-#include <>
+#include <fcntl.h>
 
 void  ft_putchar_fd(char c, int fd);
 
@@ -11,7 +11,7 @@ int main(int ac, char **av)
     
     if (ac != 2)
         return (-1);
-    fd = open(av[1]);
+    fd = open(av[1], 0);
     c = 'c';
     ft_putchar_fd(c, av[1]);
 }
