@@ -11,9 +11,10 @@ int main(int ac, char **av)
     
     if (ac != 2)
         return (-1);
-    fd = open(av[1], 0);
+    fd = open(av[1], O_WRONLY);
     c = 'c';
-    ft_putchar_fd(c, av[1]);
+    ft_putchar_fd(c, fd);
+    close(fd);
 }
 
 void  ft_putchar_fd(char c, int fd)
