@@ -34,6 +34,8 @@ int  main(void)
     //test 9
     // char const s[6] = "hello";
     // char c = 0;
+    //test 10
+    // char c = "-";
     
     char c = ',';
     char **result;
