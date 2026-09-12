@@ -35,7 +35,7 @@ char  *ft_itoa(int n)
     long num;
     
     num = n;
-    len = ft_int_len(num);
+    len = ft_intlen(num);
     result = malloc(len + 1);
     if (!result)
         return (NULL);
