@@ -6,7 +6,7 @@
 
 char  **ft_split(char const *s, char c);
 static size_t ft_word_count(char const *s, char c);
-static char *ft_extract_words(char const *s, char c, size_t *pos);
+static char *ft_extract_words(char const *s, char c, size_t *ptr);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 static void ft_free_ptr_arr(char **tab);
 
