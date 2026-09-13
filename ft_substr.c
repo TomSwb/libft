@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 16:39:18 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/02 16:48:55 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/13 11:43:53 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,9 @@ than ft_strlen(s), return  "\0".
 
 Depends on:
 	ft_strlen();
+
+External:
+	malloc();
 
 * @param s 
 * @param start 
@@ -31,15 +34,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*result;
 	size_t	i;
-	size_t	s_s;
+	size_t	s_len;
 
 	if (!s)
 		return (NULL);
-	s_s = ft_strlen(s);
-	if (start >= s_s)
+	s_len = ft_strlen(s);
+	if (start >= s_len)
 		len = 0;
-	else if (len > s_s - start)
-		len = s_s - start;
+	else if (len > s_len - start)
+		len = s_len - start;
 	result = malloc(len + 1);
 	if (!result)
 		return (NULL);

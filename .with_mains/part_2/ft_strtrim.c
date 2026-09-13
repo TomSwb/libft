@@ -58,3 +58,51 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = (end - start) + 1;
 	return (ft_substr(s1, start, len));
 }
+
+char	*ft_strdup(char const *s)
+{
+	char	*result;
+	size_t	len;
+	size_t	i;
+
+	if (!s)
+		return (NULL);
+	len = 0;
+	while (s[len])
+		len++;
+	result = malloc(len + 1);
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (s[i])
+	{
+		result[i] = s[i];
+		i++;
+	}
+	result[i] = '\0';
+	return (result);
+}
+
+char	*ft_strchr(char const *s, int c)
+{
+	char	*ptr;
+
+	return (ptr);
+}
+
+size_t	ft_strlen(char const *s)
+{
+	size_t	len;
+	
+	len = 0;
+	while (s[len])
+		len++;
+	return (len);
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*result;
+
+	return (result);
+}

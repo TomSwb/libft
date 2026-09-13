@@ -1,48 +1,49 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/30 20:44:54 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:20:27 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/13 12:03:40 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/13 12:04:12 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /**
 * @brief 
-Returns an array with the og 's' string dupped in it (copied) but in the heap 
-instead of the stack, using malloc.
+Returns a 'char *' containing the char from '*s' after being altered
+by the given function.
+
+Depdns on:
+    ft_strlen();
 
 External:
-	malloc();
-	
+    malloc();
+
 * @param s 
+* @param f 
 * @return char* 
 */
-char	*ft_strdup(const char *s)
-{
-	size_t	len;
-	char	*dest;
-	size_t	i;
 
-	if (!s)
-		return (NULL);
-	len = 0;
-	while (s[len])
-		len++;
-	dest = malloc(len + 1);
-	if (!dest)
+#include "libft.h"
+
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+{
+	size_t			len;
+	char			*result;
+	unsigned int	i;
+
+	len = ft_strlen(s);
+	result = malloc(len + 1);
+	if (!result)
 		return (NULL);
 	i = 0;
-	while (i < len)
+	while (s[i])
 	{
-		dest[i] = s[i];
+		result[i] = f(i, s[i]);
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	result[i] = '\0';
+	return (result);
 }

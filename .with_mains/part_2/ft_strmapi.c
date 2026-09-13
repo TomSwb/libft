@@ -37,7 +37,7 @@ char  *ft_strmapi(char const *s, char (*f)(unsigned int, char))
     return (result);
 }
 
-size_t ft_strlen(chat const *s)
+size_t ft_strlen(char const *s)
 {
     size_t len;
     

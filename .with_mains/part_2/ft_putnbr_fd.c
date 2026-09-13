@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <stddef.h>
+#include <limits.h>
 
 void  ft_putnbr_fd(int n, int fd);
 void ft_putchar_fd(char c, int fd);
@@ -16,7 +17,7 @@ int main(int ac, char **av)
     fd = open(av[1], O_WRONLY);
     if (fd == -1)
         return (-1);
-    n = 42;
+    n = INT_MAX;
     ft_putnbr_fd(n, fd);
     close(fd);
 }

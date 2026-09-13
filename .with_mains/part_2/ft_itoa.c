@@ -12,13 +12,13 @@ int main(void)
     //test 1
     int n = 0;
     //test 2
-    //int n = INT_MAX;
+    // int n = INT_MAX;
     //test 3
-    //int n = INT_MIN;
+    // int n = INT_MIN;
     //test 4
-    //int n = 42;
+    // int n = 42;
     //test 5
-    //int n = -42;
+    // int n = -42;
     
     char *result;
     result = ft_itoa(n);
@@ -30,7 +30,6 @@ char  *ft_itoa(int n)
 {
     char *result;
     size_t len;
-    size_t i;
     size_t sign;
     long num;
     
@@ -46,13 +45,12 @@ char  *ft_itoa(int n)
         result[0] = '-';
         sign = 1;
     }
-    i = len;
-    while (i > sign)
+    result[len] = '\0';
+    while (len > sign)
     {
-        result[--i] = num % 10 + 48;
+        result[--len] = num % 10 + 48;
         num = num / 10;
     }
-    result[len] = '\0';
     return (result);
 }
 

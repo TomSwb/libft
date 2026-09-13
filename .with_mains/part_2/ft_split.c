@@ -11,7 +11,7 @@ void *ft_calloc(size_t n, size_t size);
 static char *ft_extract_words(char const *s, char c, size_t *ptr);
 char *ft_substr(char const *s, unsigned int start, size_t len);
 size_t ft_strlen(char const *s);
-static void ft_free_ptr_arr(char **tab);
+static void ft_free_tab(char **tab);
 
 int  main(void)
 {
@@ -35,7 +35,7 @@ int  main(void)
     // char const s[6] = "hello";
     // char c = 0;
     //test 10
-    // char c = "-";
+    // char c = '-';
     
     char c = ',';
     char **result;
@@ -58,7 +58,7 @@ int  main(void)
         write(1, "\n", 1);
         i++;
     }
-    ft_free_ptr_arr(result);
+    ft_free_tab(result);
 }
 
 char  **ft_split(char const *s, char c)
@@ -81,7 +81,7 @@ char  **ft_split(char const *s, char c)
         result[i] = ft_extract_words(s, c, &pos);
         if (!result[i])
         {
-            ft_free_ptr_arr(result);
+            ft_free_tab(result);
             return (NULL);
         }
         i++;
@@ -155,15 +155,15 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 {
     char *result;
     size_t i;
-    size_t s_s;
+    size_t s_len;
     
     if (!s)
         return (NULL);
-    s_s = ft_strlen(s);
-    if (start >= s_s)
+    s_len = ft_strlen(s);
+    if (start >= s_len)
         len = 0;
-    else if (len > s_s - start)
-        len = s_s - start;
+    else if (len > s_len - start)
+        len = s_len - start;
     result = malloc(len + 1);
     if (!result)
         return (NULL);
@@ -187,7 +187,7 @@ size_t ft_strlen(char const *s)
     return (len);
 }
 
-static void ft_free_ptr_arr(char **tab)
+static void ft_free_tab(char **tab)
 {
     size_t i;
     

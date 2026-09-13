@@ -6,9 +6,9 @@ void ft_toupper_odd(unsigned int i, char *s);
 
 int main(void)
 {
-    char s[6] = "Hello";
+    char s[6] = "hello";
     
-    printf("s = %s", s);
+    printf("s = %s\n", s);
     ft_striteri(s, ft_toupper_odd);
     printf("s = %s", s);
 }

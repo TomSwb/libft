@@ -1,48 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/30 20:44:54 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:20:27 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/13 11:56:10 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/13 11:58:45 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /**
 * @brief 
-Returns an array with the og 's' string dupped in it (copied) but in the heap 
-instead of the stack, using malloc.
+Iterates by address through each char inside '*s', applying the given function.
 
-External:
-	malloc();
-	
 * @param s 
-* @return char* 
+* @param f 
 */
-char	*ft_strdup(const char *s)
-{
-	size_t	len;
-	char	*dest;
-	size_t	i;
 
-	if (!s)
-		return (NULL);
-	len = 0;
-	while (s[len])
-		len++;
-	dest = malloc(len + 1);
-	if (!dest)
-		return (NULL);
+#include "libft.h"
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+	unsigned int	i;
+
 	i = 0;
-	while (i < len)
+	while (s[i])
 	{
-		dest[i] = s[i];
+		f(i, &s[i]);
 		i++;
 	}
-	dest[i] = '\0';
-	return (dest);
 }

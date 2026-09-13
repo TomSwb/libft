@@ -1,50 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/30 16:22:12 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 11:44:38 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/13 11:17:20 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/13 11:47:15 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Return an initialised 'malloced' array filled with 0 up to len 'n'.
+Writes the given 'int n' into the given file 'fd'.
 
-External:
-	malloc();
+Depends on:
+	ft_putchar_fd();
 
 * @param n 
-* @param size 
-* @return void* 
+* @param fd 
 */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t n, size_t size)
+void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned char	*array;
-	void			*empty;
-	size_t			i;
+	long	num;
 
-	if (n == 0 || size == 0)
+	num = n;
+	if (num < 0)
 	{
-		empty = malloc(0);
-		return (empty);
+		ft_putchar_fd('-', fd);
+		num = -num;
 	}
-	if (n > SIZE_MAX / size)
-		return (NULL);
-	array = malloc(size * n);
-	if (!array)
-		return (NULL);
-	i = 0;
-	while (i < (n * size))
-	{
-		array[i] = 0;
-		i++;
-	}
-	return (array);
+	if (num >= 10)
+		ft_putnbr_fd(num / 10, fd);
+	num = num % 10;
+	ft_putchar_fd(num + 48, fd);
 }

@@ -1,48 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/30 20:44:54 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:20:27 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/13 11:20:09 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/13 11:46:43 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /**
 * @brief 
-Returns an array with the og 's' string dupped in it (copied) but in the heap 
-instead of the stack, using malloc.
+Writes the given 'char *s' into the given file 'fd', no new line.
+
+Depends on:
+	ft_strlen();
 
 External:
-	malloc();
-	
+	write();
+
 * @param s 
-* @return char* 
+* @param fd 
 */
-char	*ft_strdup(const char *s)
+
+#include "libft.h"
+
+void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	len;
-	char	*dest;
-	size_t	i;
 
-	if (!s)
-		return (NULL);
-	len = 0;
-	while (s[len])
-		len++;
-	dest = malloc(len + 1);
-	if (!dest)
-		return (NULL);
-	i = 0;
-	while (i < len)
-	{
-		dest[i] = s[i];
-		i++;
-	}
-	dest[i] = '\0';
-	return (dest);
+	len = ft_strlen(s);
+	write(fd, s, len);
 }
