@@ -59,6 +59,7 @@ PART3 = ft_lstadd_back.c \
 		ft_lstsize.c
 
 SOURCES = ${PART1} ${PART2}
+# add ${PART3} when done
 		
 CC = gcc
 
