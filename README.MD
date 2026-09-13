@@ -80,11 +80,14 @@ fclean
 
 ## Resources
 
+#### Editor:
+- `VSCodium` : Used to avoid Microsoft telemetry, and to not have AI intergrated tentations.
+
 #### 42:
 - `libft.pdf` version: 19.3
 
 #### System:
-- Linux man for the libc related functions
+- `Linux man` for the libc related functions
 
 #### Github:
 
@@ -106,12 +109,14 @@ I always write my code as best of my capacities first.
 
 My AI agents are set to guide me with questions as per 42 pedagogical philophy.
 
-- Perplexity: 
+I use VSCodium in purpose to not have AI integration, this means except my copy-paste into chats for some reviews, AI does not see my code, and AI will never write my code - I do not copy-paste from AI into my code.
+
+- `Perplexity:` 
 	1. A quick search to understand how to actually use the libft library in future projects.
 	2. Confirm what certain Markdown syntax I found in repos do.
 	3. Back and forth conversation to ensure my understanding of more complex functions.
 
-- ChatGPT:
+- `ChatGPT:`
 	1. Back and forth conversation to ensure my understanding of more complex functions.
 	2. Help in learning to figure out by myself edge cases and ensure functions are safe and complete.
 	3. Help in theory of pointers and many different syntaxes for them and their related uses.
