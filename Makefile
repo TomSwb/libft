@@ -39,7 +39,7 @@ SOURCES = ft_atoi.c \
 		ft_memchr.c \
 		ft_memcmp.c \
 		ft_memcpy.c \
-		ft_memmove.ft \
+		ft_memmove.c \
 		ft_memset.c \
 		
 		ft_putchar_fd.c \
@@ -68,9 +68,9 @@ SOURCES = ft_atoi.c \
 		
 CC = gcc
 
-CFLAGS = -Wall -Werror -Wextra -I libft.h
+CFLAGS = -Wall -Werror -Wextra
 
-OBJECTS = $({SOURCES}:.c=.o)
+OBJECTS = ${SOURCES:.c=.o}
 
 AR = ar -rcs
 
@@ -84,7 +84,8 @@ all: ${NAME}
 ${NAME}: ${OBJECTS}
 		${AR} ${NAME} ${OBJECTS}
 
-clean: ${RM} ${OBECTS}
+clean: 
+		${RM} ${OBJECTS}
 
 fclean: clean
 		${RM} ${NAME}
