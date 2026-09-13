@@ -6,14 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/03 16:41:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:44:58 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/13 13:11:37 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief
 Header for complete libft library, defining all required libraries, functions
-and struct.
+and a struct.
 
 */
 
@@ -31,6 +31,14 @@ and struct.
 # include <stddef.h>
 // malloc 
 # include <stdlib.h>
+
+/***** Struct *****/
+
+typedef struct	s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 /*****  Functions *****/
 
@@ -82,5 +90,19 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /** Part 3 **/
+
+//TODO: t_list	*ft_lstnew(void *content);
+//TODO: void	ft_lstadd_front(t_list **lst, t_list *new);
+//TODO: void	ft_lstadd_back(t_list **lst, t_list *new);
+
+//TODO: unsigned int	ft_lstsize(t_list *lst);
+
+//TODO: t_list	ft_lstlast(t_list *lst);
+
+//TODO: void	ft_lstdelone(t_list *lst, void (*del)(void*)):
+//TODO: void	ft_lstclear(t_list **lst, void (*del)(void*));
+
+//TODO: void	ft_lstiter(t_list *lst, void (*f)(void*))
+//TODO: t_list	ft_lstmap(t_list *lst, void (*f)(void*), void (*del)(void *))
 
 #endif

@@ -80,26 +80,42 @@ fclean
 
 ## Resources
 
-##### 42:
+#### 42:
 - `libft.pdf` version: 19.3
 
-##### System:
+#### System:
 - Linux man for the libc related functions
 
-##### Github:
+#### Github:
 
-###### Before beginning of cursus: 
+##### Before beginning of cursus: 
 - https://github.com/mrochedy/42-Libft/tree/main
 
 ##### Other:
 - [Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - To learn MD syntax
 
-##### AI:
+#### AI:
 
-###### Before beginning of cursus
+##### Before beginning of cursus
+
+⚠️ Disclaimer: I only ask for actual answer/solutions when I realise that I am missing theoritical knowledge.
+
+e.g. : a new syntax or a new concept I had not explored previously. 
+
+I always write my code as best of my capacities first.
+
+My AI agents are set to guide me with questions as per 42 pedagogical philophy.
+
 - Perplexity: 
 	1. A quick search to understand how to actually use the libft library in future projects.
 	2. Confirm what certain Markdown syntax I found in repos do.
+	3. Back and forth conversation to ensure my understanding of more complex functions.
+
+- ChatGPT:
+	1. Back and forth conversation to ensure my understanding of more complex functions.
+	2. Help in learning to figure out by myself edge cases and ensure functions are safe and complete.
+	3. Help in theory of pointers and many different syntaxes for them and their related uses.
+	4. Help in learning clean architechture.
 
 ## Detailed description
 
@@ -156,4 +172,16 @@ instead of the stack, using malloc.
 
 ##### Part 3: Linked list related
 
-- [ ] Coming soon...
+- `ft_lstnew` : ...
+- `ft_lstadd_front` : ...
+- `ft_lstadd_back` : ...
+
+- `ft_lstsize` : ...
+
+- `ft_lstlast` : ...
+
+- `ft_lstdelone` : ...
+- `ft_lstclear` : ...
+
+- `ft_lstiter` : ...
+- `ft_lstmap` : ...
