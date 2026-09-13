@@ -7,10 +7,10 @@
 ## Description
 	
 #### Goal:
-Create my own C library (a collection of functions) to use during the curriculum
+Create my own C library (a collection of functions) to use during the 42 curriculum
 
 #### Brief overview:	
-Contains a total of XXX functions made according to :
+Contains a total of 43 functions made according to :
 1. Libc functions (with some adaptations).
 2. Additional functions (according to specific instructions).
 3. Linked list related functions (according to specific instructions).
@@ -18,6 +18,7 @@ Contains a total of XXX functions made according to :
 Additionaly contains: 
 -	libft.h.
 -	Makefile.
+-	README.
 
 ## Instructions
 
