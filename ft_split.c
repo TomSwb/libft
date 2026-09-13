@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:40:07 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 11:54:10 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/13 12:40:20 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,22 @@ delimited by 'c'.
 
 Depends on: 
 	ft_calloc();
+		external -> malloc();
+		
 	ft_substr();
 		ft_strlen();
+		external -> malloc();
 
 Statics:
 	ft_word_count();
-	ft_extract_word();
-	ft_free_tab();
 
-External:
-	free();
+	ft_extract_word();
+		ft_substr();
+			ft_strlen();
+			external -> malloc();
+			
+	ft_free_tab();
+		external -> free();
 
 * @param s 
 * @param c 

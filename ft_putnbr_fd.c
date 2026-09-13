@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:17:20 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 11:47:15 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/13 12:38:03 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ Writes the given 'int n' into the given file 'fd'.
 
 Depends on:
 	ft_putchar_fd();
+		external -> write();
 
 * @param n 
 * @param fd 

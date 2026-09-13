@@ -141,7 +141,7 @@ instead of the stack, using malloc.
 
 - `ft_substr` : Returns a 'char *'of size 'len' containing the bytes of 's' from the index 'start' up to 'len'. If no s, returns NULL, if start is greater than ft_strlen(s), return  "\0".
 - `ft_strjoin` : Returns a 'char *' having concatenate 's1' and 's2' in the heap.
-- `ft_strtrim` : ...
+- `ft_strtrim` : Returns a 'char *' with the trimmed version of '*s', having remove the chars from 'set' at the beginning en end of 's' if present.
 - `ft_split` : Returns a malloced 'char **' containing the strings exrtracted from '*s' delimited by 'c'.  
 
 - `ft_itoa` : Returns an array 'char *' representing the given int 'n'.

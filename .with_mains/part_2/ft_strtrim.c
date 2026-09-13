@@ -16,18 +16,20 @@ int	main(void)
 	char const	s1[6] = "Hello";
 	char const	set[3] = "Ho";
 	//test 2
-	//char const	s1[1] = "";
-	//char const	set[3] = "Ho";
+	// char const	s1[1] = "";
+	// char const	set[3] = "Ho";
 	//test 3
-	//char const	s1[6] = "Hello";
-	//char const	set[1] = "";
+	// char const	s1[6] = "Hello";
+	// char const	set[1] = "";
 	//test 4
-	//char const	s1[6] = "Hello";
-	//char const	set[2] = "o";
+	// char const	s1[6] = "Hello";
+	// char const	set[2] = "o";
 	//test 5
-	//char const	s1[6] = "Hello";
-	//char const	set[2] = "H";
-	
+	// char const	s1[6] = "Hello";
+	// char const	set[2] = "H";
+	//test 6
+	// char const	s1[6] = "Hello";
+	// char const	set[3] = "el";
 	
 	char	*result;
 
@@ -85,9 +87,18 @@ char	*ft_strdup(char const *s)
 
 char	*ft_strchr(char const *s, int c)
 {
-	char	*ptr;
+	char	c_c;
 
-	return (ptr);
+	c_c = (char)c;
+	while (*s)
+	{
+		if (*s == c_c)
+			return ((char *)s);
+		s++;
+	}
+	if (c == '\0')
+		return ((char *)s);
+	return (NULL);
 }
 
 size_t	ft_strlen(char const *s)
@@ -103,6 +114,25 @@ size_t	ft_strlen(char const *s)
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*result;
+	size_t	s_len;
+	size_t	i;
 
+	if (!s)
+		return (NULL);
+	s_len = ft_strlen(s);
+	if (start >= s_len)
+		len = 0;
+	else if (len > s_len - start)
+		len = s_len - start;
+	result = malloc(len + 1);
+	if (!result)
+		return (NULL);
+	i = 0;
+	while (i < len)
+	{
+		result[i] = s[start + i];
+		i++;
+	}
+	result[len] = '\0'; 
 	return (result);
 }
