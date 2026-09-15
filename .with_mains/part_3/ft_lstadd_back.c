@@ -36,6 +36,7 @@ int main(void)
             printf("current node pointed next is = NULL\n");
         else
             printf("current node pointed next is = %p\n", (void *)lst->next);
+        printf("\n");
         lst = lst->next;
     }
     ft_lstadd_back(&head, &lastnode);
@@ -48,6 +49,7 @@ int main(void)
             printf("current node pointed next is = NULL\n");
         else
             printf("current node pointed next is = %p\n", (void *)lst->next);
+        printf("\n");
         lst = lst->next;
     }
 }
