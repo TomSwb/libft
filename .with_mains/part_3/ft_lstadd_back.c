@@ -12,6 +12,7 @@ void  ft_lstadd_back(t_list **lst, t_list *new);
 int main(void)
 {
     t_list *head;
+    t_list *lst;
     t_list node1;
     t_list node2;
     t_list lastnode;
@@ -20,6 +21,7 @@ int main(void)
     int last = 42;
     
     head = &node1;
+    lst = &node1;
     node1.content = &n1;
     node1.next = &node2;
     node2.content = & n2;
@@ -31,11 +33,11 @@ int main(void)
         printf("lst address = %p\n", (void *)lst->next);
         lst = lst->next;
     }
-    ft_lstadd_back(&lst, &new);
-    while (lst)
+    ft_lstadd_back(&head, &new);
+    while (head)
     {
-        printf("lst address = %p\n", (void *)lst->next);
-        lst = lst->next;
+        printf("lst address = %p\n", (void *)head->next);
+        head = head->next;
     }
 }
 
