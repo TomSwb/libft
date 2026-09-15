@@ -30,14 +30,24 @@ int main(void)
     lastnode.next = NULL;
     while (lst)
     {
-        printf("lst address = %p\n", (void *)lst);
+        printf("current node address = %p\n", (void *)lst);
+        printf("cureent node pointed content is = %d\n", *(int *)lst->content);
+        if (lst->next == NULL)
+            printf("current node pointed next is = NULL\n");
+        else
+            printf("current node pointed next is = %p\n", (void *)lst->next);
         lst = lst->next;
     }
     ft_lstadd_back(&head, &lastnode);
     lst = head;
     while (lst)
     {
-        printf("lst address = %p\n", (void *)lst);
+        printf("current node address = %p\n", (void *)lst);
+        printf("cureent node pointed content is = %d\n", *(int *)lst->content);
+        if (lst->next == NULL)
+            printf("current node pointed next is = NULL\n");
+        else
+            printf("current node pointed next is = %p\n", (void *)lst->next);
         lst = lst->next;
     }
 }
