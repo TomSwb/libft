@@ -8,10 +8,12 @@ typedef struct	s_list
 void  ft_lstclear(t_list **lst, void (*del)(void*))
 {
     t_list *ptr;
-    
-    ptr = *lst;
-    while (ptr && ptr->next != NULL)
+
+    while (lst && ptr->next != NULL)
     {
-        ptr = ptr->next;
+        ptr = lst->next;
+        del(lst->content);
+        free(*lst);
+        lst = ptr;
     }
 }
