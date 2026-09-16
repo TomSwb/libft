@@ -7,15 +7,15 @@ typedef struct	s_list
 
 void  ft_lstclear(t_list **lst, void (*del)(void*))
 {
-    t_list **ptr;
+    t_list *temp;
     
     if (!lst || !del)
         return ;
-    while (lst && lst->next != NULL)
+    while (*lst)
     {
-        ptr = *lst->next;
-        del(*lst->content);
+        temp = (*lst)->next;
+        del((*lst)->content);
         free(*lst);
-        lst = ptr;
+        *lst = temp;
     }
 }
