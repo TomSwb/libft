@@ -11,11 +11,11 @@ void  ft_lstclear(t_list **lst, void (*del)(void*))
     
     if (!lst || !del)
         return ;
-    while (lst && ptr->next != NULL)
+    while (lst && lst->next != NULL)
     {
         ptr = *lst->next;
         del(*lst->content);
         free(*lst);
-        *lst = ptr;
+        lst = ptr;
     }
 }
