@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/29 17:12:42 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 11:07:57 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:41:29 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,15 @@
 Returns a pointer to the given 'dest' array after copying 'n' bytes 
 values from 'src'.
 
-* @param dest 
-* @param src 
-* @param n 
+* @param void dest 
+* @param void const *src 
+* @param size_t n 
 * @return void* 
 */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest, const void *src, size_t n)
+void	*ft_memcpy(void *dest, void const *src, size_t n)
 {
 	unsigned char		*u_dest;
 	const unsigned char	*u_src;

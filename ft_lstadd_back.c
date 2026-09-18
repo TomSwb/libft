@@ -6,20 +6,20 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 17:02:06 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:04:16 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:39:05 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /**
 * @brief 
-Appends the given node 'new' to the current list 'lst'. Lastnode->next
-stores new address and new->next = NULL to terminate the list again
+Appends the given node 'new' to the end of 'lst'.
 
-* @param lst 
-* @param new 
+* @param t_list **lst 
+* @param t_list *new 
 */
+
+#include "libft.h"
+
 void  ft_lstadd_back(t_list **lst, t_list *new)
 {
     t_list *ptr;

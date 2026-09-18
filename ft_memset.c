@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/29 17:48:37 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 11:07:53 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:42:06 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 * @brief 
 Returns the given 's' array filled with the 'c' char up to 'n' bytes.
 
-* @param s 
-* @param c 
-* @param n 
+* @param void *s 
+* @param int c 
+* @param size_t n 
 * @return void* 
 */
 

@@ -1,37 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/25 16:30:36 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:46:13 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/18 17:36:03 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/18 17:39:39 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns the difference of value between the char in same index of 
-'s1' and 's2' maximum of 'n' len or before 'NULL' char
+Free the nodes and their content part of 'lst' up to the last node, 
+using the 'del' given function to take care of the content.
 
-* @param char const *s1 
-* @param char const *s2 
-* @param size_t n 
-* @return int 
+External:
+	free();
+
+* @param t_list **lst 
+* @param void (*del)(void*) 
 */
 
 #include "libft.h"
 
-int	ft_strncmp(char const *s1, char const *s2, size_t n)
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
-	while (n > 0 && (*s1 || *s2))
-	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
-		n--;
-	}
-	return (0);
+    t_list	*temp;
+    
+    if (!lst || !del)
+        return ;
+    while (*lst)
+    {
+        temp = (*lst)->next;
+        del((*lst)->content);
+        free(*lst);
+        *lst = temp;
+    }
 }

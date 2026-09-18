@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 16:39:18 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:33:08 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:47:09 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@ Depends on:
 External:
 	malloc();
 
-* @param s 
-* @param start 
-* @param len 
+* @param char const *s 
+* @param unsigned int start 
+* @param size_t len 
 * @return char* 
 */
 

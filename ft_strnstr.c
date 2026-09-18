@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/25 17:57:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/25 18:06:00 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:46:32 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ null-terminated string 'little' in the string 'big',
 where not more than 'len' characters are searched. 
 Characters that appear after a '\0' character are not searched. 
 
-* @param big 
-* @param little 
-* @param len 
+* @param char const *big 
+* @param char const *little 
+* @param size_t len 
 * @return char* 
 */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(char const *big, char const *little, size_t len)
 {
 	size_t	i;
 	size_t	j;

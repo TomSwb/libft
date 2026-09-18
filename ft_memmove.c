@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 11:04:35 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/30 11:08:06 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:41:51 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,15 @@ Returns a pointer to the given 'dest' array after copyig
 'n' len of bytes from 'src' in it, ensuring overlap does not 
 affect the data contrarily to memcpy which does not account for it.
 
-* @param dest 
-* @param src 
-* @param n 
+* @param void dest 
+* @param void const *src 
+* @param size_t n 
 * @return void* 
 */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, void const *src, size_t n)
 {
 	unsigned char		*u_dest;
 	unsigned char		*u_src;

@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 12:42:42 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:45:16 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:46:57 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,8 +27,8 @@ Depends on:
 		ft_strlen();
 		external -> malloc();
 
-* @param s1 
-* @param set 
+* @param char const *s1 
+* @param char const *set 
 * @return char* 
 */
 

@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 20:44:54 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:20:27 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:43:28 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ instead of the stack, using malloc.
 External:
 	malloc();
 	
-* @param s 
+* @param char const *s 
 * @return char* 
 */
-char	*ft_strdup(const char *s)
+char	*ft_strdup(char const *s)
 {
 	size_t	len;
 	char	*dest;

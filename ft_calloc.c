@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 16:22:12 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 11:44:38 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:37:22 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ Return an initialised 'malloced' array filled with 0 up to len 'n'.
 External:
 	malloc();
 
-* @param n 
-* @param size 
+* @param size_t n 
+* @param size_t size 
 * @return void* 
 */
 

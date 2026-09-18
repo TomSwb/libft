@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:56:10 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 15:04:39 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:43:58 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 * @brief 
 Iterates by address through each char inside '*s', applying the given function.
 
-* @param s 
-* @param f 
+* @param char *s 
+* @param void (*f)(unsigned int, char*) 
 */
 
 #include "libft.h"

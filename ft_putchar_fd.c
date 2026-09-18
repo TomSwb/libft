@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:08:56 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 11:45:12 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:42:16 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ Writes the given char 'c' inside the given file 'fd'.
 External:
 	write();
 
-* @param c 
-* @param fd 
+* @param char c 
+* @param int fd 
 */
 
 #include "libft.h"

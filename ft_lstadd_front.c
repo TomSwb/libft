@@ -1,37 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/08/25 16:30:36 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:46:13 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/18 17:29:50 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/18 17:39:18 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns the difference of value between the char in same index of 
-'s1' and 's2' maximum of 'n' len or before 'NULL' char
+Appends 'new' to the front of 'lst', making new->next point to either NULL
+or the address of the og first node of lst.
 
-* @param char const *s1 
-* @param char const *s2 
-* @param size_t n 
-* @return int 
+* @param t_list **lst 
+* @param t_list *new 
 */
 
 #include "libft.h"
 
-int	ft_strncmp(char const *s1, char const *s2, size_t n)
+void  ft_lstadd_front(t_list **lst, t_list *new)
 {
-	while (n > 0 && (*s1 || *s2))
-	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
-		n--;
-	}
-	return (0);
+	if (new == NULL || lst == NULL)
+		return ;
+	new->next = *lst;
+	*lst = new;
 }

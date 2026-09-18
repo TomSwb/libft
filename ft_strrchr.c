@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/25 15:50:42 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/25 18:02:44 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:46:47 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@ or NULL  if the character is not found.  The terminating null byte is
 considered part of the string, so that if c is specified as '\0', 
 this function return a pointer to the terminator.
 
-* @param s 
-* @param c 
+* @param char const *s 
+* @param int c 
 * @return char* 
 */
 
 #include "libft.h"
 
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(char const *s, int c)
 {
 	char	*ptr;
 

@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 12:03:40 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:04:12 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:45:42 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,14 @@
 Returns a 'char *' containing the char from '*s' after being altered
 by the given function.
 
-Depdns on:
+Depends on:
     ft_strlen();
 
 External:
     malloc();
 
-* @param s 
-* @param f 
+* @param char const *s 
+* @param char (*f)(unsigned int, char) 
 * @return char* 
 */
 

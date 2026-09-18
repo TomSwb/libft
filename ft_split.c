@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:40:07 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 12:40:20 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:42:51 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ Statics:
 	ft_free_tab();
 		external -> free();
 
-* @param s 
-* @param c 
+* @param char const *s 
+* @param char c 
 * @return char** 
 */
 

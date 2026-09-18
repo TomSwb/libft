@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:12:20 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 11:46:31 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:42:25 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@ Depends on:
 External:
 	write();
 
-* @param s 
-* @param fd 
+* @param char *s 
+* @param int fd 
 */
 
 #include "libft.h"

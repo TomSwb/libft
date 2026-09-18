@@ -22,12 +22,14 @@ int	main(void)
 	ptr = &old;
 	new.content = &n2;
 	new.next = NULL;
+	printf("\nInit:\n");
 	printf("1st node content is: %d\n", *(int *)ptr->content);
 	printf("1st node address is %p\n", (void *)ptr);
 	printf("Old node address is %p\n", (void *)&old);
 	printf("Old.next address is %p\n", (void *)old.next);
 	printf("New node address is %p\n", (void *)&new);
 	ft_lstadd_front(&ptr, &new);
+	printf("\nAfter call:\n");
 	printf("1st node content is: %d\n", *(int *)ptr->content);
 	printf("1st node address is %p\n", (void *)ptr);
 	printf("New node address is %p\n", (void *)&new);

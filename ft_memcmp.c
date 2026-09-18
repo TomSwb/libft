@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 22:34:31 by tomswb            #+#    #+#             */
-/*   Updated: 2026/08/29 16:36:05 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:41:07 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 * @brief 
 Returns the result of comparing the bytes value up to 'n' number of bytes.
 
-* @param s1 
-* @param s2 
-* @param n 
+* @param void const *s1 
+* @param void const *s2 
+* @param size_t n 
 * @return int 
 */
 
 #include "libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(void const *s1, void const *s2, size_t n)
 {
 	const unsigned char	*str1;
 	const unsigned char	*str2;

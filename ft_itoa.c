@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 10:24:48 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/13 11:53:27 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 17:38:34 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ Static:
 External:
 	malloc();
 
-* @param n 
+* @param int n 
 * @return char* 
 */
 
