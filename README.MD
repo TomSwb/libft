@@ -1,4 +1,4 @@
-##### ⚠️ Currently being build, this repo includes my test files and todos
+##### ⚠️ This repo includes my test files
 
 *This project has been created as part of the 42 curriculum by \<tschwab>*
 
@@ -90,7 +90,7 @@ fclean
 #### System:
 - `Linux man` for the libc related functions
 
-#### Github:
+### Github:
 
 ##### Before beginning of cursus: 
 - https://github.com/mrochedy/42-Libft/tree/main
@@ -98,9 +98,9 @@ fclean
 ##### Other:
 - [Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - To learn MD syntax
 
-#### AI:
+### AI:
 
-##### Before beginning of cursus
+#### Before beginning of cursus
 
 ⚠️ Disclaimer: I only ask for actual answer/solutions when I realise that I am missing theoritical knowledge.
 
@@ -121,7 +121,8 @@ I use VSCodium in purpose to not have AI integration, this means except my copy-
 	1. Back and forth conversation to ensure my understanding of more complex functions.
 	2. Help in learning to figure out by myself edge cases and ensure functions are safe and complete.
 	3. Help in theory of pointers and many different syntaxes for them and their related uses.
-	4. Help in learning clean architechture.
+	4. Help in learning clean architecture.
+	5. Help in learning the theory behind linked list.
 
 ## Detailed description
 
