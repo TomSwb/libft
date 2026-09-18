@@ -22,7 +22,7 @@ Additionally contains:
 
 ## Instructions
 
-1. Clone the repo at the root/libft of your project (creating the folder in the process):
+1. Clone the repo at the root of your project, creating the libft directory in the process:
 
 ```bash
 git clone https://github.com/TomSwb/libft.git libft
