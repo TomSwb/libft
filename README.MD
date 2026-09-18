@@ -28,6 +28,8 @@ Additionally contains:
 git clone https://github.com/TomSwb/libft.git libft
 ```
 
+*optional: remove the .with_mains folder, it is a test folder*
+
 2. Navigate to the newly created ./libft then run:
 
 ```bash
