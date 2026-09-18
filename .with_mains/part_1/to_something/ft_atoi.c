@@ -6,6 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
 
 int	ft_atoi(const char *nptr);
 
@@ -23,16 +24,14 @@ int	main(int ac, char **av)
 
 int	ft_atoi(const char *nptr)
 {
-	int	result;
-	int	i;
-	int	sign;
-	int	count;
+	int		result;
+	size_t	i;
+	int		sign;
 
 	sign = 1;
 	while (nptr[i] == 32 
-		|| nptr[i] >= 9 && nptr[i] <= 13)
+		|| (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
-	count = 0;
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
