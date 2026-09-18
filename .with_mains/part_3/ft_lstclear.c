@@ -1,5 +1,6 @@
 
-#include <unistd.h>
+#include <stddef.h>
+#include <stdlib.h>
 #include <stdio.h>
 
 typedef struct	s_list
@@ -8,70 +9,101 @@ typedef struct	s_list
 	struct s_list	*next;
 }					t_list;
 
+t_list  *ft_lstnew(void  *content);
+void	*ft_ctnnew(size_t content);
+void 	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_delcontent(void *content);
 
 int main(void)
 {
-    t_list	**lst;
-	t_list	*temp;
-    t_list	*node1;
-    t_list	*node2;
-    t_list	*node3;
-	int		*n1;
-	int		*n2;
-	int		*n3;
+	t_list	*lst;
+	t_list	*temp1;
 	size_t	i;
+	size_t	len;
+	t_list	*node;
+
+	lst = NULL;
+	len = 5;
+	i = 0;
+	printf("\nAllocating:\n");
+	while(i < len)
+	{
+		node = ft_lstnew(ft_ctnnew(i));
+		ft_lstadd_back(&lst, node);
+		i++;
+	}
+	temp1 = lst;
+	i = 1;
+	while (temp1)
+	{
+		printf("Node %zu address is: %p, content is: %zu\n", i, (void*)temp1, *(size_t *)temp1->content);
+		temp1 = temp1->next;
+		i++;
+	}
+	temp1 = lst;
+	i = 1;
+	ft_lstclear(&lst->next, ft_delcontent);
+	printf("\nClearing...\n");
+	printf("\nLeft is:\n");
+	while (temp1)
+	{
+		printf("Node %zu address is: %p, content is: %zu\n", i, (void*)temp1, *(size_t *)temp1->content);
+		temp1 = temp1->next;
+		i++;
+	}
+	if (lst->next != NULL)
+	{
+		printf("lst->next not NULL, function failed");
+		return (-1);
+	}
+	ft_lstclear(&lst, ft_delcontent);
+	if (lst != NULL)
+	{
+		printf("lst not NULL, function failed\n");
+		return (-1);
+	}
+	printf("\nClearing was succesfull");	
+}
+
+t_list  *ft_lstnew(void  *content)
+{
+    t_list *node;
     
-    node1 = malloc(sizeof(t_list));
-	node2 = malloc(sizeof(t_list));
-	node3 = malloc(sizeof(t_list));
-	n1 = malloc(sizeof(int));
-	n2 = malloc(sizeof(int));
-	n3 = malloc(sizeof(int));
-	*n1 = 40;
-	*n2 = 41;
-	*n3 = 42;
-	lst = &node1;
-	node1->content = n1;
-	node1->next = node2;
-	node2->content = n2;
-	node2->next = node3;
-	node3->content = n3;
-	node3->next = NULL;
-	temp = *lst;
-	i = 1;
-	while (temp)
-	{
-		printf("Node %zu address is: %p\n", i, (void)temp);
-		temp = temp->next;
-		i++;
-	}
-	temp = *lst;
-	i = 1;
-	lst = &(*lst)->next;
-	ft_lstclear(lst, ft_delcontent);
-	while (temp)
-	{
-		printf("Node %zu address is: %p\n", i, (void)temp);
-		temp = temp->next;
-		i++;
-	} 
-	if (*lst !=NULL)
-	{
-		printf("*lst not NULL, function failed");
-		return (-1);
-	}
-	ft_lstclear(&node1, ft_delcontent);
-	if (node1 != NULL || temp != NULL)
-	{
-		if (temp != NULL)
-			printf("Temp not NULL, function failed\n");
-		if (node1 != NULL)
-			printf("Node1 not NULL, function failed");
-		return (-1);
-	}
-	printf("Clearing was succesfull");	
+    node = malloc(sizeof(t_list));
+    if (!node)
+        return (NULL);
+    node->content = content;
+    node->next = NULL;
+    return (node);
+}
+
+void	*ft_ctnnew(size_t content)
+{
+	size_t	*new;
+
+	new = malloc(sizeof(size_t));
+	if (!new)
+		return (NULL);
+	*new = content;
+	return (new);
+}
+
+void  ft_lstadd_back(t_list **lst, t_list *new)
+{
+    t_list *ptr;
+    
+    if (!lst || !new)
+        return ;
+    if (*lst == NULL)
+    {
+        *lst = new;
+        return ;
+    }
+    ptr = *lst;
+    while (ptr && ptr->next != NULL)
+        ptr = ptr->next;
+    ptr->next = new;
 }
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
