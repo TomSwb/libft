@@ -6,13 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 16:22:12 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:37:22 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:04:57 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Return an initialised 'malloced' array filled with 0 up to len 'n'.
+Allocates memory for n elements of size bytes each, initializes all 
+allocated bytes to 0, and returns a pointer to the allocated memory.
 
 External:
 	malloc();
@@ -32,7 +33,9 @@ void	*ft_calloc(size_t n, size_t size)
 
 	if (n == 0 || size == 0)
 	{
-		empty = malloc(0);
+		empty = malloc(1);
+		if (!empty)
+			return (NULL);
 		return (empty);
 	}
 	if (n > SIZE_MAX / size)

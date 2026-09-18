@@ -6,14 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 17:58:34 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:01:25 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:22:49 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Iterates through each node of 'lst' content, applying the changes from
-the given function 'f'.
+Iterates through each node's content in 'lst', applying the changes 
+from the given function 'f'.
 
 * @param t_list *lst 
 * @param void (*f)(void*) 

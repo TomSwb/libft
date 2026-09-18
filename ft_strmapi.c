@@ -6,14 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 12:03:40 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:45:42 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:07:04 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a 'char *' containing the char from '*s' after being altered
-by the given function.
+Returns a malloced char * containing the characters from s after applying 
+the given function f to each character and its index.
 
 Depends on:
     ft_strlen();
@@ -34,6 +34,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	char			*result;
 	unsigned int	i;
 
+	if (!s || !f)
+		return (NULL);
 	len = ft_strlen(s);
 	result = malloc(len + 1);
 	if (!result)

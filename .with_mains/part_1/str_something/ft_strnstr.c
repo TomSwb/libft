@@ -28,20 +28,20 @@ int  main(int ac, char **av)
   printf("OG: %s\n", strnstr(big, little, len));
 }
 
-char  *ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(char const *big, char const *little, size_t len)
 {
-	size_t  i;
-	size_t  j;
+	size_t	i;
+	size_t	j;
 
-	if ((!big || !little) && !len)
+	if (!len)
 		return ((char *)big);
 	if (little[0] == '\0')
 		return ((char *)big);
 	i = 0;
-	while (big[i] && i < len)
+	while (i < len && big[i])
 	{
 		j = 0;
-		while (little[j] && big[i + j] == little[j] && (i + j) < len)
+		while ((i + j) < len && little[j] && big[i + j] == little[j])
 			j++;
 		if (little[j] == '\0')
 			return ((char *)&big[i]);

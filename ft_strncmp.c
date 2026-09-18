@@ -6,14 +6,15 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/25 16:30:36 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:46:13 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:03:47 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns the difference of value between the char in same index of 
-'s1' and 's2' maximum of 'n' len or before 'NULL' char
+Compares up to n characters of s1 and s2 as unsigned char values, stopping 
+at a '\0' character. Returns the difference between the first pair of 
+different characters, or 0 if no difference is found.
 
 * @param char const *s1 
 * @param char const *s2 
@@ -28,7 +29,7 @@ int	ft_strncmp(char const *s1, char const *s2, size_t n)
 	while (n > 0 && (*s1 || *s2))
 	{
 		if (*s1 != *s2)
-			return (*s1 - *s2);
+			return ((unsigned char)*s1 - (unsigned char)*s2);
 		s1++;
 		s2++;
 		n--;

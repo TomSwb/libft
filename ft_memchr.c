@@ -6,14 +6,15 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 21:53:32 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:40:36 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:04:35 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Checks the given array for the given 'int c' character and if found returns
-the address of found char.
+Searches the first n bytes of the given memory area for the byte value 
+represented by c, and returns a pointer to the first matching byte or 
+NULL if not found.
 
 * @param void const s 
 * @param int c 

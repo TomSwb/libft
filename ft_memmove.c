@@ -6,13 +6,13 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 11:04:35 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:41:51 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 19:33:51 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a pointer to the given 'dest' array after copyig
+Returns a pointer to the given 'dest' array after copying
 'n' len of bytes from 'src' in it, ensuring overlap does not 
 affect the data contrarily to memcpy which does not account for it.
 
@@ -32,19 +32,22 @@ void	*ft_memmove(void *dest, void const *src, size_t n)
 
 	u_dest = (unsigned char *)dest;
 	u_src = (unsigned char *)src;
-	if (n == 0)
-		return (dest);
 	i = 0;
-	while (n > 0)
+	if (u_dest < u_src)
 	{
-		if (u_dest < u_src)
+		while (i < n)
 		{
 			u_dest[i] = u_src[i];
 			i++;
 		}
-		else
+	}
+	else
+	{	
+		while (n > 0)
+		{	
 			u_dest[n - 1] = u_src[n - 1];
-		n--;
+			n--;
+		}
 	}
 	return (dest);
 }

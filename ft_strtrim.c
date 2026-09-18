@@ -6,14 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 12:42:42 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:46:57 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:06:52 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a 'char *' with the trimmed version of '*s', having remove the
-chars from 'set' at the beginning en end of 's' if present.
+Returns a malloced char * containing s1 with all characters present 
+in set removed from its beginning and end.
 
 Depends on:
 	ft_strdup();

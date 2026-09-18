@@ -6,13 +6,13 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 17:14:09 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:44:58 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:30:26 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Copy src into dest and return the len of the wanted result (len of src)  
+Copies src into dest and returns the len of the wanted result (len of src)  
 
 * @param char *dest 
 * @param char const *src 

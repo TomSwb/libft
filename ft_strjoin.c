@@ -6,13 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 16:44:25 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:44:16 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:24:08 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a 'char *' having concatenate 's1' and 's2' in the heap.
+Returns a 'char *' containing the concatenation of s1 and s2 
+in allocated memory.
 
 Depends on:
 	ft_strlen();

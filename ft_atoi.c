@@ -6,14 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/11 08:51:12 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:46:31 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:03:14 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Converts a given char to int, epuring spaces and 
-accounting for max 1 occurence of + || - sign
+Converts the initial numerical portion of the given string to an int, 
+skipping leading whitespace and accounting for a maximum of one + or - sign.
 
 * @param char const *nptr
 * @return int 
@@ -27,8 +27,9 @@ int	ft_atoi(char const *nptr)
 	size_t	i;
 	int		sign;
 
-	sign = 1;
+	result = 0;
 	i = 0;
+	sign = 1;
 	while (nptr[i] == 32
 		|| (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;

@@ -6,13 +6,13 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 18:28:41 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:37:35 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:19:14 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns the number of nodes in the give 'lst'.
+Returns the number of nodes in the given 'lst'.
 
 * @param t_list *lst 
 * @return unsigned int 

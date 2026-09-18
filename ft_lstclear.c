@@ -6,14 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 17:36:03 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:34:53 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:07:48 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Free the nodes and their content part of 'lst' up to the last node, 
-using the 'del' given function to take care of the content.
+Frees all nodes of lst and their contents, using the given del function 
+for each content, and sets the list pointer to NULL.
 
 External:
 	free();

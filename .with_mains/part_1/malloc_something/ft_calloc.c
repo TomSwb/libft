@@ -57,7 +57,9 @@ void	*ft_calloc(size_t n, size_t size)
 
 	if (n == 0 || size == 0)
 	{
-		empty = malloc(0);
+		empty = malloc(1);
+		if (!empty)
+			return (NULL);
 		return (empty);
 	}
 	if (n > SIZE_MAX / size)

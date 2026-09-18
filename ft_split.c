@@ -6,14 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:40:07 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:42:51 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:18:49 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a malloced 'char **' containing the strings exrtracted from '*s', 
-delimited by 'c'.  
+Returns a malloced char ** containing the strings extracted from '*s' 
+delimited by 'c'. 
 
 Depends on: 
 	ft_calloc();

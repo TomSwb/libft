@@ -18,7 +18,7 @@ int	main(void)
 	char	src2[] = "World";
 	char	*ft_dest = &src1[1];
 	char	*og_dest = &src2[1];
-	size_t	n = sizeof(src1) - 1;
+	size_t	n = 1;
 	size_t	i;
 
 	ft_memmove(ft_dest, src1, n);
@@ -33,27 +33,30 @@ int	main(void)
 	}
 }
 
-void	*ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, void const *src, size_t n)
 {
 	unsigned char		*u_dest;
-	unsigned char	*u_src;
-	size_t	i;
+	unsigned char		*u_src;
+	size_t				i;
 
 	u_dest = (unsigned char *)dest;
 	u_src = (unsigned char *)src;
-	if (n == 0)
-		return (dest);
 	i = 0;
-	while (n > 0)
+	if (u_dest < u_src)
 	{
-		if (u_dest < u_src)
+		while (i < n)
 		{
 			u_dest[i] = u_src[i];
 			i++;
 		}
-		else
+	}
+	else
+	{	
+		while (n > 0)
+		{	
 			u_dest[n - 1] = u_src[n - 1];
-		n--;
+			n--;
+		}
 	}
 	return (dest);
 }

@@ -6,15 +6,15 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 16:39:18 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:47:09 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:06:04 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a 'char *'of size 'len' containing the bytes of 's' from the 
-index 'start' up to 'len'. If no s, reutrns NULL, if start is greater 
-than ft_strlen(s), return  "\0".
+Returns a malloced char * containing at most 'len' characters from 's', starting 
+at index start. If start is greater than or equal to ft_strlen(s), 
+returns an allocated empty string.
 
 Depends on:
 	ft_strlen();

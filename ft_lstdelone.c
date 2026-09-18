@@ -6,13 +6,13 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 17:49:03 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:35:20 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:07:34 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Free a singular node and its content.
+Frees a single node after applying the given del function to its content.
 
 External:
     free();

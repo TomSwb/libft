@@ -6,16 +6,16 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/25 15:39:19 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:43:11 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:26:07 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Return a pointer to the first matched character 
+Returns a pointer to the first matched character 
 or NULL  if the character is not found.  The terminating null byte is 
 considered part of the string, so that if c is specified as '\0', 
-this function return a pointer to the terminator.
+this function returns a pointer to the terminator.
 
 * @param char const *s 
 * @param int c 

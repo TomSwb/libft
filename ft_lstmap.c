@@ -6,15 +6,15 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 18:09:06 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:36:09 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:08:49 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a new list, with the og list nodes content modified, using the
-given function 'f'. If any allocation fails, clears the whole new list
-using ft_lstclear and the given 'del' function then returns NULL. 
+Returns a new list created by applying the given function f to the content of 
+each node of the original list. If an allocation fails, clears the whole new 
+list using the given del function and returns NULL.
 
 Depends on:
 	ft_lstnew();

@@ -6,13 +6,13 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/31 16:08:56 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:44:40 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:26:17 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Return the total length of the attempted concatenation, 
+Returns the total length of the attempted concatenation, 
 strlen(dst) + strlen(src) if successful or size + strlen(src) if the buffer dst
 has no '\0' char within size bytes which does not result in a concatenation.
 

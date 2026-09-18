@@ -6,16 +6,14 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 20:44:54 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:43:28 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 20:24:25 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
 /**
 * @brief 
-Returns an array with the og 's' string dupped in it (copied) but in the heap 
-instead of the stack, using malloc.
+Returns an array with the original 's' string duplicated in it (copied) 
+but in the heap instead of the stack, using malloc.
 
 External:
 	malloc();
@@ -23,6 +21,9 @@ External:
 * @param char const *s 
 * @return char* 
 */
+
+#include "libft.h"
+
 char	*ft_strdup(char const *s)
 {
 	size_t	len;

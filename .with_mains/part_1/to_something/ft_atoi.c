@@ -22,14 +22,16 @@ int	main(int ac, char **av)
 	printf("OG: %d", atoi(nptr));
 }
 
-int	ft_atoi(const char *nptr)
+int	ft_atoi(char const *nptr)
 {
 	int		result;
 	size_t	i;
 	int		sign;
 
+	result = 0;
+	i = 0;
 	sign = 1;
-	while (nptr[i] == 32 
+	while (nptr[i] == 32
 		|| (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
 	if (nptr[i] == '-' || nptr[i] == '+')

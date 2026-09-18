@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/25 17:57:24 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:46:32 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 19:55:59 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,15 +30,15 @@ char	*ft_strnstr(char const *big, char const *little, size_t len)
 	size_t	i;
 	size_t	j;
 
-	if ((!big || !little) && !len)
+	if (!len)
 		return ((char *)big);
 	if (little[0] == '\0')
 		return ((char *)big);
 	i = 0;
-	while (big[i] && i < len)
+	while (i < len && big[i])
 	{
 		j = 0;
-		while (little[j] && big[i + j] == little[j] && (i + j) < len)
+		while ((i + j) < len && little[j] && big[i + j] == little[j])
 			j++;
 		if (little[j] == '\0')
 			return ((char *)&big[i]);
