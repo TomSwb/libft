@@ -1,40 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/18 17:36:03 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:34:53 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/18 18:04:00 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/18 18:04:43 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Free the nodes and their content part of 'lst' up to the last node, 
-using the 'del' given function to take care of the content.
+Returns a pointer to the last node of list 'lst'.
 
-External:
-	free();
-
-* @param t_list **lst 
-* @param void (*del)(void *) 
+* @param t_list *lst 
+* @return t_list* 
 */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*temp;
-
-	if (!lst || !del)
-		return ;
-	while (*lst)
-	{
-		temp = (*lst)->next;
-		del((*lst)->content);
-		free(*lst);
-		*lst = temp;
-	}
+	while (lst && lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }

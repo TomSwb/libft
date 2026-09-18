@@ -1,40 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstclear.c                                      :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/18 17:36:03 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 18:34:53 by tomswb           ###   ########.fr       */
+/*   Created: 2026/09/18 18:14:27 by tomswb            #+#    #+#             */
+/*   Updated: 2026/09/18 18:37:01 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Free the nodes and their content part of 'lst' up to the last node, 
-using the 'del' given function to take care of the content.
+Returns a new allocated node, with its content set as the given 'content'.
 
 External:
-	free();
+    malloc();
 
-* @param t_list **lst 
-* @param void (*del)(void *) 
+* @param void *content 
+* @return t_list* 
 */
 
 #include "libft.h"
 
-void	ft_lstclear(t_list **lst, void (*del)(void *))
+t_list	*ft_lstnew(void *content)
 {
-	t_list	*temp;
+	t_list	*node;
 
-	if (!lst || !del)
-		return ;
-	while (*lst)
-	{
-		temp = (*lst)->next;
-		del((*lst)->content);
-		free(*lst);
-		*lst = temp;
-	}
+	node = malloc(sizeof(t_list));
+	if (!node)
+		return (NULL);
+	node->content = content;
+	node->next = NULL;
+	return (node);
 }

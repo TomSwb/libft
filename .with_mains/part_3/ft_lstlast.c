@@ -23,9 +23,11 @@ int	main(void)
 	node2.next = &node3;
 	node3.content = NULL;
 	node3.next = NULL;
+	printf("\nInit:\n");
 	printf("Node1 address is : %p\n", (void *)&node1);
 	printf("ptr is : %p\n", (void *)ptr);
 	ptr = ft_lstlast(ptr);
+	printf("\nAfter adding nodes:\n");
 	printf("ptr is : %p\n", (void *)ptr);
 	printf("Node3 address is : %p\n", (void *)&node3);
 }

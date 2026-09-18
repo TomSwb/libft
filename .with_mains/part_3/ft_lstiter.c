@@ -9,7 +9,7 @@ typedef struct	s_list
 }					t_list;
 
 void	ft_lstiter(t_list *lst, void (*f)(void *));
-void	ft_make42(void *value);
+void	ft_add42(void *value);
 
 int	main(void)
 {
@@ -19,8 +19,8 @@ int	main(void)
 	int		n1;
 	int		n2;
 
-	n1 = 63;
-	n2 = 21;
+	n1 = 0;
+	n2 = 1;
 	lst = &node1;
 	node1.content = &n1;
 	node1.next = &node2;
@@ -29,7 +29,7 @@ int	main(void)
 	printf("\nInit:\n");
 	printf("node1 content = %d, address: %p\n", *(int *)node1.content, &node1.content);
 	printf("node2 content = %d, address: %p\n", *(int *)node2.content, &node2.content);
-	ft_lstiter(lst, ft_make42);
+	ft_lstiter(lst, ft_add42);
 	printf("\nAfter ft_lstiter:\n");
 	printf("node1 content = %d, address: %p\n", *(int *)node1.content, &node1.content);
 	printf("node2 content = %d, address: %p\n", *(int *)node2.content, &node2.content);
@@ -46,10 +46,10 @@ void	ft_lstiter(t_list *lst, void(*f)(void *))
 	}
 }
 
-void	ft_make42(void *value)
+void	ft_add42(void *value)
 {
 	int	*result;
 	
 	result = (int *)value;
-	*result = 42;
+	*result += 42;
 }

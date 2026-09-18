@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 17:29:50 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:39:18 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/09/18 18:33:57 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ or the address of the og first node of lst.
 
 #include "libft.h"
 
-void  ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
 	if (new == NULL || lst == NULL)
 		return ;
