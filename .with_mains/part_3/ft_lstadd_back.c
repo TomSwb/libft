@@ -28,6 +28,7 @@ int main(void)
     node2.next = NULL;
     lastnode.content = &last;
     lastnode.next = NULL;
+    printf("\nInit:\n");
     while (lst)
     {
         printf("current node address = %p\n", (void *)lst);
@@ -41,6 +42,7 @@ int main(void)
     }
     ft_lstadd_back(&head, &lastnode);
     lst = head;
+    printf("\nAfter function call:\n");
     while (lst)
     {
         printf("current node address = %p\n", (void *)lst);

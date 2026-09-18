@@ -45,7 +45,7 @@ int main(void)
 	i = 1;
 	ft_lstclear(&lst->next, ft_delcontent);
 	printf("\nClearing...\n");
-	printf("\nLeft is:\n");
+	printf("\nLeft is: \n");
 	while (temp1)
 	{
 		printf("Node %zu address is: %p, content is: %zu\n", i, (void*)temp1, *(size_t *)temp1->content);
