@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 11:04:35 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 19:33:51 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/10/01 23:14:11 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,9 +42,9 @@ void	*ft_memmove(void *dest, void const *src, size_t n)
 		}
 	}
 	else
-	{	
+	{
 		while (n > 0)
-		{	
+		{
 			u_dest[n - 1] = u_src[n - 1];
 			n--;
 		}
