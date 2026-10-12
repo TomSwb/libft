@@ -6,7 +6,7 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 11:20:09 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 17:42:39 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/10/12 18:59:56 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	len;
 
+	if (!s)
+		return ;
 	len = ft_strlen(s);
 	write(fd, s, len);
 }

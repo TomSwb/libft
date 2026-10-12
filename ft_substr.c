@@ -6,14 +6,15 @@
 /*   By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/02 16:39:18 by tomswb            #+#    #+#             */
-/*   Updated: 2026/09/18 20:06:04 by tomswb           ###   ########.fr       */
+/*   Updated: 2026/10/12 19:02:01 by tomswb           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /**
 * @brief 
-Returns a malloced char * containing at most 'len' characters from 's', starting 
-at index start. If start is greater than or equal to ft_strlen(s), 
+Returns a malloced char * containing at most 'len' characters from 's', 
+starting at index start. 
+If start is greater than or equal to ft_strlen(s), 
 returns an allocated empty string.
 
 Depends on:

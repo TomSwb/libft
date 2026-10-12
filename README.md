@@ -125,6 +125,9 @@ I use VSCodium on purpose to not have AI integration, this means except my copy-
 	5. Help in learning the theory behind linked list.
 	6. Final documentation checks.
 
+- `Claude:`
+	1. Back and forth conversation to ensure everything is correct after a first failed evaluation.
+
 ## Detailed description
 
 #### List of all the available functions:

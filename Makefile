@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tschwab <tschwab@student.42.fr>            +#+  +:+       +#+         #
+#    By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tomswb            #+#    #+#              #
-#    Updated: 2026/10/12 16:22:35 by tschwab          ###   ########.fr        #
+#    Updated: 2026/10/12 19:05:04 by tomswb           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,6 +26,7 @@ PART1 = ft_atoi.c \
 		ft_memmove.c \
 		ft_memset.c \
 		ft_strchr.c \
+		ft_strdup.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
@@ -41,7 +42,6 @@ PART2 = ft_itoa.c \
 		ft_putnbr_fd.c \
 		ft_putstr_fd.c \
 		ft_split.c \
-		ft_strdup.c \
 		ft_striteri.c \
 		ft_strjoin.c \
 		ft_strmapi.c \
@@ -59,7 +59,7 @@ PART3 = ft_lstadd_back.c \
 		ft_lstsize.c
 
 SOURCES = ${PART1} ${PART2} ${PART3}
-		
+
 CC = cc
 
 CFLAGS = -Wall -Werror -Wextra
@@ -70,7 +70,7 @@ AR = ar -rcs
 
 RM = rm -f
 
-%.o: %.c
+%.o: %.c libft.h
 	${CC} ${CFLAGS} -c $< -o $@
 
 all: ${NAME}
@@ -78,7 +78,7 @@ all: ${NAME}
 ${NAME}: ${OBJECTS}
 		${AR} ${NAME} ${OBJECTS}
 
-clean: 
+clean:
 		${RM} ${OBJECTS}
 
 fclean: clean
