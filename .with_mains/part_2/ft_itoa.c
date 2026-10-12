@@ -10,9 +10,9 @@ static size_t ft_intlen(long num);
 int main(void)
 {
     //test 1
-    int n = 0;
+     // int n = 0;
     //test 2
-    // int n = INT_MAX;
+    int n = INT_MAX;
     //test 3
     // int n = INT_MIN;
     //test 4

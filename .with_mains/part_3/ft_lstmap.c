@@ -121,7 +121,7 @@ t_list  *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*node;
 	void	*content;
 
-	if (!lst || !f || !del)
+	if (!lst || !f)
 		return (NULL);
 	result = NULL;
 	while (lst)

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tomswb <tomswb@student.42.fr>              +#+  +:+       +#+         #
+#    By: tschwab <tschwab@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tomswb            #+#    #+#              #
-#    Updated: 2026/09/18 18:43:35 by tomswb           ###   ########.fr        #
+#    Updated: 2026/10/12 15:37:17 by tschwab          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -60,7 +60,7 @@ PART3 = ft_lstadd_back.c \
 
 SOURCES = ${PART1} ${PART2} ${PART3}
 		
-CC = gcc
+CC = cc
 
 CFLAGS = -Wall -Werror -Wextra
 
