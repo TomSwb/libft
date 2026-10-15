@@ -3,77 +3,82 @@
 # Libft - a library by TomSwb
 
 ## Description
-	
-#### Goal:
-Create my own C library (a collection of functions) to use during the 42 curriculum
 
-#### Brief overview:	
-Contains a total of 43 functions made according to:
-1. Libc functions (with some adaptations).
+#### Goal:
+Create my own C library (a collection of functions) to use during the 42 curriculum.
+
+#### Brief overview:
+Contains a total of 43 functions, split into three parts:
+1. Libc functions (reimplemented with the `ft_` prefix, with some adaptations).
 2. Additional functions (according to specific instructions).
 3. Linked list related functions (according to specific instructions).
-	
-Additionally contains: 
--	libft.h.
--	Makefile.
--	README.
+
+Additionally contains:
+- `libft.h`: the header with all the prototypes and the `t_list` structure.
+- `Makefile`: builds the `libft.a` static library.
+- `README.md`: this file.
 
 ## Instructions
 
-1. Clone the repo at the root of your project, creating the libft directory in the process:
+1. Clone the repo at the root of your project, which creates the `libft` directory:
 
 ```bash
 git clone https://github.com/TomSwb/libft.git libft
 ```
 
-*optional: remove the .with_mains folder, it is a test folder*
+*Optional: remove the `.with_mains` folder (it is a test folder) and the `.git` folder (to avoid a nested repository inside your project).*
 
-2. Navigate to the newly created ./libft then run:
+2. Go into the newly created `./libft` directory and run:
 
 ```bash
 make
-``` 
+```
 
 3. In your project Makefile:
-- Add this flag to your compiling: 
+- Add this flag when compiling:
 
 	```text
 	-I./libft
 	```
-	
-- Add this var: 
+
+- Add this variable:
 
 	```text
 	LIBFT = ./libft/libft.a
 	```
 
-- Compile e.g.: 
+- Build the library through its own Makefile before your project, e.g.:
+
+	```text
+	$(LIBFT):
+		$(MAKE) -C ./libft
+	```
+
+- Link it when compiling your program, e.g.:
 
 	```text
 	$(CC) $(CFLAGS) -o $(NAME) $(OBJS) $(LIBFT)
 	```
 
-4. 
-	
-	```text
-	#include "libft.h"
-	```
+4. Include the header in any file that needs the libft function declarations:
 
-	can be included as a header in any file requiring the libft function declarations.
+```c
+#include "libft.h"
+```
 
-5. If you decide to alter any functions in the library don't forget to adapt the library Makefile and to run:
+5. If you alter any function, rebuild the library (and if you add or remove a file, also update the `SOURCES` list in the library Makefile):
 
 ```bash
 make re
 ```
 
-6. You can also clean the .o files:
+6. You can remove the `.o` files:
 
 ```bash
 make clean
 ```
 
-7. And/or clean both the .o files and the .a library;
+7. Or remove both the `.o` files and the `libft.a` library:
 
 ```bash
 make fclean
@@ -82,15 +87,15 @@ make fclean
 ## Resources
 
 #### Editor:
-- `VSCodium` : Used to avoid Microsoft telemetry, and to avoid AI integrated temptations.
+- `VSCodium`: used to avoid Microsoft telemetry and the temptation of integrated AI.
 
 #### 42:
 - `libft.pdf` version: 19.3
 
 #### System:
-- `Linux man` for the libc related functions
+- `Linux man` pages for the libc related functions.
 
-### Github:
+#### GitHub:
 
 Reference repo:
 - https://github.com/mrochedy/42-Libft/tree/main
@@ -98,38 +103,38 @@ Reference repo:
 Tripouille tester:
 - https://github.com/Tripouille/libftTester
 
-##### Other:
-- [Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - To learn MD syntax
+#### Other:
+- [Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - to learn Markdown syntax.
 
-### AI:
+#### AI:
 
-⚠️ Disclaimer: I only ask for actual answer/solutions when I realise that I am missing theoretical knowledge.
-
-e.g. : a new syntax or a new concept I had not explored previously. 
+⚠️ Disclaimer: I only ask for actual answers/solutions when I realise that I am missing theoretical knowledge,
+e.g. a new syntax or a new concept I had not explored before.
 
 I always write my code to the best of my abilities first.
 
-My AI agents are set to guide me with questions as per 42 pedagogical philosophy.
+My AI agents are set to guide me with questions, following the 42 pedagogical philosophy.
 
-I use VSCodium on purpose to not have AI integration, this means except my copy-paste into chats for some reviews, AI does not see my code, and AI will never write my code - I do not copy-paste from AI into my code.
+I use VSCodium on purpose to not have any AI integration. This means AI only sees my code when I paste it into a chat or share the repository for a review, and AI never writes my code: I do not copy-paste from AI into my code.
 
-- `Perplexity:` 
+- `Perplexity`:
 	1. A quick search to understand how to actually use the libft library in future projects.
-	2. Confirm what certain Markdown syntax I found in repos do.
-	3. Back and forth conversation to ensure my understanding of more complex functions.
+	2. Confirming what some Markdown syntax I found in other repos does.
+	3. Back and forth conversations to ensure my understanding of the more complex functions.
 
-- `ChatGPT:`
-	1. Back and forth conversation to ensure my understanding of more complex functions.
-	2. Help in learning to figure out by myself edge cases and ensure functions are safe and complete.
-	3. Help in theory of pointers and many different syntaxes for them and their related uses.
+- `ChatGPT`:
+	1. Back and forth conversations to ensure my understanding of the more complex functions.
+	2. Help in learning to find edge cases by myself and to make sure functions are safe and complete.
+	3. Help with the theory of pointers, their different syntaxes and their related uses.
 	4. Help in learning clean architecture.
-	5. Help in learning the theory behind linked list.
+	5. Help with the theory behind linked lists.
 	6. Final documentation checks.
 
-- `Claude:`
-	1. Back and forth conversation to ensure everything is correct after a first failed evaluation.
-	2. Stupid mistake check to avoid failing Moulinette because e.g. I used .MD extension instead of .md
-	3. Help in completing and correcting this README.
+- `Claude`:
+	1. Back and forth conversations to make sure everything is correct after a first failed evaluation.
+	2. "Stupid mistake" checks of the repository (file names, Makefile, headers, Norm), to avoid failing an evaluation because e.g. I used a `.MD` extension instead of `.md`.
+	3. Fixing my 42 header editor extension (not part of the project).
+	4. Help in completing and correcting this README.
 
 ## Detailed description
 
@@ -137,61 +142,61 @@ I use VSCodium on purpose to not have AI integration, this means except my copy-
 
 ##### Part 1: Libc replica
 
-- `ft_isprint`: Checks for  any  printable  character  including space.
-- `ft_isascii`: Checks if a given int c is a 7-bit unsigned char value that fits inside the ASCII characters set.
+- `ft_isprint`: Checks for any printable character, including space.
+- `ft_isascii`: Checks if the given int `c` is a 7-bit value that fits in the ASCII character set (0 to 127).
 - `ft_isalpha`: Checks for an alphabetic character: 'A' through 'Z' and 'a' through 'z'.
 - `ft_isdigit`: Checks for a digit: '0' through '9'.
-- `ft_isalnum`: Checks for  an  alphanumeric  character; it  is equivalent to (ft_isalpha(int c) || ft_isdigit(int c)).
+- `ft_isalnum`: Checks for an alphanumeric character; it is equivalent to `(ft_isalpha(c) || ft_isdigit(c))`.
 
-- `ft_tolower`: If c is an uppercase letter, returns its lowercase equivalent, if a lowercase representation exists in  the  current locale. Otherwise, it returns c.
-- `ft_toupper`: If c is a lowercase letter, returns its uppercase equivalent, if an uppercase representation exists in  the  current locale. Otherwise, it returns c.
-- `ft_atoi`: Converts the initial numerical portion of the given string to an int, skipping leading whitespace and accounting for a maximum of one + or - sign.
+- `ft_tolower`: If `c` is an uppercase ASCII letter, returns its lowercase equivalent. Otherwise, returns `c` unchanged.
+- `ft_toupper`: If `c` is a lowercase ASCII letter, returns its uppercase equivalent. Otherwise, returns `c` unchanged.
+- `ft_atoi`: Converts the initial numerical portion of the given string to an int, skipping leading whitespace and accepting at most one '+' or '-' sign.
 
-- `ft_strlen`:  Returns the length of the given char *s.
-- `ft_strlcpy`: Copies src into dest and returns the len of the wanted result (len of src).
-- `ft_strlcat` : Returns the total length of the attempted concatenation, strlen(dst) + strlen(src) if successful or size + strlen(src) if the buffer dst has no '\0' char within size bytes which does not result in a concatenation.
-- `ft_strncmp`: Compares up to n characters of s1 and s2 as unsigned char values, stopping at a '\0' character. Returns the difference between the first pair of different characters, or 0 if no difference is found.
-- `ft_strnstr`:  Locates the first occurrence of the null-terminated string 'little' in the string 'big', where not more than 'len' characters are searched. Characters that appear after a '\0' character are not searched. 
-- `ft_strchr`:  Returns a pointer to the first matched character or NULL  if the character is not found.  The terminating null byte is considered part of the string, so that if c is specified as '\0', this function returns a pointer to the terminator.
-- `ft_strrchr`:  Returns a pointer to the last matched character or NULL  if the character is not found.  The terminating null byte is considered part of the string, so that if c is specified as '\0', this function returns a pointer to the terminator.
+- `ft_strlen`: Returns the length of the given string `s`.
+- `ft_strlcpy`: Copies at most `size - 1` characters from `src` into `dst`, always NUL-terminating the result if `size` is not 0. Returns the length of `src` (the length of the string it tried to create).
+- `ft_strlcat`: Appends `src` to the end of `dst`, writing at most `size - strlen(dst) - 1` characters and NUL-terminating the result. Returns the total length of the string it tried to create: `strlen(dst) + strlen(src)`, or `size + strlen(src)` if `dst` has no '\0' within `size` bytes (in which case nothing is appended).
+- `ft_strncmp`: Compares up to `n` characters of `s1` and `s2` as unsigned char values, stopping at a '\0' character. Returns the difference between the first pair of different characters, or 0 if no difference is found.
+- `ft_strnstr`: Locates the first occurrence of the NUL-terminated string `little` in the string `big`, searching no more than `len` characters. Characters after a '\0' are not searched. Returns `big` if `little` is empty, NULL if `little` is not found, otherwise a pointer to the first character of the occurrence.
+- `ft_strchr`: Returns a pointer to the first occurrence of the character `c` in `s`, or NULL if it is not found. The terminating '\0' is considered part of the string, so if `c` is '\0', it returns a pointer to the terminator.
+- `ft_strrchr`: Returns a pointer to the last occurrence of the character `c` in `s`, or NULL if it is not found. The terminating '\0' is considered part of the string, so if `c` is '\0', it returns a pointer to the terminator.
 
-- `ft_bzero`:  Fills the first n bytes of the given memory area with '\0'.
-- `ft_memchr`:  Searches the first n bytes of the given memory area for the byte value represented by c, and returns a pointer to the first matching byte or NULL if not found.
-- `ft_memcmp`:  Returns the result of comparing the bytes value up to 'n' number of bytes.
-- `ft_memcpy`:  Returns a pointer to the given 'dest' array after copying 'n' bytes values from 'src'. Does not account for overlap in memory.
-- `ft_memmove`:  Returns a pointer to the given 'dest' array after copying 'n' len of bytes from 'src' in it, accounting that overlap does not affect the data unlike memcpy.
-- `ft_memset`:  Returns the given 's' array filled with the 'c' char up to 'n' bytes.
+- `ft_bzero`: Fills the first `n` bytes of the given memory area with '\0'.
+- `ft_memchr`: Searches the first `n` bytes of the given memory area for the byte value `c` (as unsigned char), and returns a pointer to the first matching byte, or NULL if it is not found.
+- `ft_memcmp`: Compares the first `n` bytes of `s1` and `s2` as unsigned char values. Returns the difference between the first pair of different bytes, or 0 if they are identical.
+- `ft_memcpy`: Copies `n` bytes from `src` into `dest` and returns `dest`. Does not handle overlapping memory areas.
+- `ft_memmove`: Copies `n` bytes from `src` into `dest` and returns `dest`. Unlike `ft_memcpy`, the copy is correct even if the memory areas overlap.
+- `ft_memset`: Fills the first `n` bytes of `s` with the byte value `c` and returns `s`.
 
-- `ft_calloc`: Allocates memory for n elements of size bytes each, initializes all allocated bytes to 0, and returns a pointer to the allocated memory.
-- `ft_strdup`: Returns an array with the original 's' string duplicated in it (copied) but in the heap instead of the stack, using malloc.
+- `ft_calloc`: Allocates memory for `n` elements of `size` bytes each, sets all bytes to 0, and returns a pointer to it. Returns NULL if the allocation fails or if `n * size` would overflow. If `n` or `size` is 0, returns a unique pointer that can be passed to `free()`.
+- `ft_strdup`: Returns a new string, allocated with malloc, containing a copy of `s`.
 
 ##### Part 2: Additional functions
 
-- `ft_substr` : Returns a malloced char * containing at most 'len' characters from 's', starting at index start. If start is greater than or equal to ft_strlen(s), returns an allocated empty string.
-- `ft_strjoin` : Returns a 'char *' containing the concatenation of s1 and s2 in allocated memory.
-- `ft_strtrim` : Returns a malloced char * containing s1 with all characters present in set removed from its beginning and end.
-- `ft_split` : Returns a malloced char ** containing the strings extracted from '*s' delimited by 'c'.  
+- `ft_substr`: Returns a malloced string containing at most `len` characters from `s`, starting at index `start`. If `start` is greater than or equal to `ft_strlen(s)`, returns an allocated empty string.
+- `ft_strjoin`: Returns a malloced string containing the concatenation of `s1` and `s2`.
+- `ft_strtrim`: Returns a malloced copy of `s1` with all characters present in `set` removed from its beginning and end.
+- `ft_split`: Returns a malloced, NULL-terminated array of strings obtained by splitting `s` using the character `c` as a delimiter. If any allocation fails, everything already allocated is freed and NULL is returned.
 
-- `ft_itoa` : Returns an array 'char *' representing the given int 'n'.
+- `ft_itoa`: Returns a malloced string representing the given int `n` (negative numbers included).
 
-- `ft_strmapi` : Returns a malloced char * containing the characters from s after applying the given function f to each character and its index.
-- `ft_striteri` : Iterates by address through each char inside '*s', applying the given function.
+- `ft_strmapi`: Returns a malloced string containing the result of applying the function `f` to each character of `s` and its index.
+- `ft_striteri`: Applies the function `f` to each character of `s`, passing its index and its address so it can be modified in place.
 
-- `ft_putchar_fd` : Writes the given char 'c' inside the given file 'fd'.
-- `ft_putstr_fd` : Writes the given 'char *s' into the given file 'fd', no new line.
-- `ft_putendl_fd` : Writes the given 'char *s' into the given file 'fd', followed by a new line.
-- `ft_putnbr_fd` : Writes the given 'int n' into the given file 'fd'.
+- `ft_putchar_fd`: Writes the character `c` to the given file descriptor `fd`.
+- `ft_putstr_fd`: Writes the string `s` to the given file descriptor `fd`, without a newline.
+- `ft_putendl_fd`: Writes the string `s` to the given file descriptor `fd`, followed by a newline.
+- `ft_putnbr_fd`: Writes the integer `n` to the given file descriptor `fd`.
 
 ##### Part 3: Linked list related
 
-- `ft_lstnew` : Returns a new allocated node, with its content set as the given 'content'.
-- `ft_lstadd_front` : Appends 'new' to the front of 'lst', making new->next point to either NULL or the address of the original first node of lst.
-- `ft_lstsize` : Returns the number of nodes in the given 'lst'.
-- `ft_lstlast` : Returns a pointer to the last node of list 'lst'.
-- `ft_lstadd_back` : Appends the given node 'new' to the end of 'lst'.
+- `ft_lstnew`: Returns a new allocated node, with its content set to the given `content` and `next` set to NULL.
+- `ft_lstadd_front`: Adds the node `new` at the front of the list `lst`, making `new->next` point to the original first node (or NULL if the list was empty).
+- `ft_lstsize`: Returns the number of nodes in the list `lst`.
+- `ft_lstlast`: Returns a pointer to the last node of the list `lst`.
+- `ft_lstadd_back`: Adds the node `new` at the end of the list `lst`.
 
-- `ft_lstdelone` : Frees a single node after applying the given del function to its content.
-- `ft_lstclear` : Frees all nodes of lst and their contents, using the given del function for each content, and sets the list pointer to NULL.
+- `ft_lstdelone`: Frees a single node after applying the function `del` to its content. Does not free the next node.
+- `ft_lstclear`: Frees every node of `lst` and their contents, using `del` on each content, then sets the list pointer to NULL.
 
-- `ft_lstiter` : Iterates through each node's content in 'lst', applying the changes from the given function 'f'.
-- `ft_lstmap` : Returns a new list created by applying the given function f to the content of each node of the original list. If an allocation fails, clears the whole new list using the given del function and returns NULL.
+- `ft_lstiter`: Iterates through the list `lst`, applying the function `f` to the content of each node.
+- `ft_lstmap`: Returns a new list created by applying the function `f` to the content of each node of `lst`. If an allocation fails, clears the whole new list using `del` and returns NULL.
