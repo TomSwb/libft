@@ -103,8 +103,6 @@ Tripouille tester:
 
 ### AI:
 
-#### Before beginning of cursus
-
 ⚠️ Disclaimer: I only ask for actual answer/solutions when I realise that I am missing theoretical knowledge.
 
 e.g. : a new syntax or a new concept I had not explored previously. 
@@ -131,6 +129,7 @@ I use VSCodium on purpose to not have AI integration, this means except my copy-
 - `Claude:`
 	1. Back and forth conversation to ensure everything is correct after a first failed evaluation.
 	2. Stupid mistake check to avoid failing Moulinette because e.g. I used .MD extension instead of .md
+	3. Help in completing and correcting this README.
 
 ## Detailed description
 
