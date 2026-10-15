@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tomswb <tschwab@student.42lausanne.ch>     +#+  +:+       +#+         #
+#    By: tschwab <tschwab@student.42lausanne.ch>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/30 15:02:33 by tschwab           #+#    #+#              #
-#    Updated: 2026/10/12 19:05:04 by tschwab          ###   ########.ch        #
+#    Updated: 2026/10/15 13:44:25 by tschwab          ###   ########.ch        #
 #                                                                              #
 # **************************************************************************** #
 
