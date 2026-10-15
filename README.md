@@ -92,8 +92,11 @@ make fclean
 
 ### Github:
 
-##### Before beginning of cursus: 
+Reference repo:
 - https://github.com/mrochedy/42-Libft/tree/main
+
+Tripouille tester:
+- https://github.com/Tripouille/libftTester
 
 ##### Other:
 - [Markdown List Syntax](https://www.markdownlang.com/basic/lists.html) - To learn MD syntax
@@ -127,7 +130,7 @@ I use VSCodium on purpose to not have AI integration, this means except my copy-
 
 - `Claude:`
 	1. Back and forth conversation to ensure everything is correct after a first failed evaluation.
-	2. Stupid mistake check to avoid failing moulinette because e.g. I used .MD extension instead of .md
+	2. Stupid mistake check to avoid failing Moulinette because e.g. I used .MD extension instead of .md
 
 ## Detailed description
 
