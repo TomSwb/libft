@@ -18,6 +18,9 @@ Additionally contains:
 - `Makefile`: builds the `libft.a` static library.
 - `README.md`: this file.
 
+Evaluation result:
+![success](.with_main/docs/image.png)
+
 ## Instructions
 
 1. Clone the repo at the root of your project, which creates the `libft` directory:
