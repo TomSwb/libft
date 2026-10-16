@@ -19,7 +19,8 @@ Additionally contains:
 - `README.md`: this file.
 
 Evaluation result:
-![success](.with_main/docs/image.png)
+
+&nbsp;&nbsp;<img src="image.png" alt="succes" width="100">
 
 ## Instructions
 
